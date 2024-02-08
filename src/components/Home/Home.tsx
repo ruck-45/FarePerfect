@@ -7,12 +7,11 @@ import HeroSection from "./subComponents/HeroSection";
 import Benefit from "./subComponents/Benefit";
 
 import Achievement from "./subComponents/Achievement";
-import Help from "./subComponents/Help";
-
+import Services from "./subComponents/Services";
 import Description from "./subComponents/Description";
 import Abovefoter from "./subComponents/Abovefoter";
 import Product from "./subComponents/Product";
-import Testimonials from "./subComponents/Testimonials";
+import FlightBooking from "./subComponents/FlightBooking";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -26,13 +25,12 @@ const Home = () => {
   return (
     <div>
       <HeroSection />
+      <FlightBooking />
       <Benefit />
-   
-      <Achievement />
-      {/* <Help /> */}
-      
+      <Mission />
       <Description />
-      <Testimonials />
+      <Achievement />
+      <Services />
       <Product />
       <Abovefoter />
     </div>
