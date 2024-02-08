@@ -23,23 +23,23 @@ const EmailForm = () => {
   const [emailState, setEmailState] = useState<number>(-1);
   const [userNameState, setUserNameState] = useState<number>(-1);
 
-//   const sendEmail = async () => {
-//     try {
-//       if (!emailValidity && userNameState > 0 && emailState > 0) {
-//         await emailjs.sendForm(
-//           `${process.env.REACT_APP_SERVICE_ID}`,
-//           `${process.env.REACT_APP_TEMPLATE_ID}`,
-//           form.current!,
-//           `${process.env.REACT_APP_PUBLIC_KEY}`
-//         );
-//         emailSent();
-//       } else {
-//         formNotFill();
-//       }
-//     } catch (error) {
-//       emailNotSent();
-//     }
-//   };
+  //   const sendEmail = async () => {
+  //     try {
+  //       if (!emailValidity && userNameState > 0 && emailState > 0) {
+  //         await emailjs.sendForm(
+  //           `${process.env.REACT_APP_SERVICE_ID}`,
+  //           `${process.env.REACT_APP_TEMPLATE_ID}`,
+  //           form.current!,
+  //           `${process.env.REACT_APP_PUBLIC_KEY}`
+  //         );
+  //         emailSent();
+  //       } else {
+  //         formNotFill();
+  //       }
+  //     } catch (error) {
+  //       emailNotSent();
+  //     }
+  //   };
 
   const checkEmail = (event: FormEvent<HTMLInputElement>) => {
     email.current = event.currentTarget.value;
@@ -58,7 +58,7 @@ const EmailForm = () => {
       <div className="text-white flex flex-col gap-[1rem]">
         <h1 className="text-[3rem] text-black ">Email Us</h1>
       </div>
-      <form className="flex flex-col gap-[1rem] items-center lg:w-[70%] grow" ref={form}>
+      <form className="flex flex-col gap-[1rem] items-center lg:w-[100%] grow" ref={form}>
         <div className="flex gap-[1rem] w-full">
           <Input
             type="text"

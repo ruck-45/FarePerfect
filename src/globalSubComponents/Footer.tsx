@@ -1,11 +1,4 @@
 // Dependencies
-import { Divider, Image, Button, Listbox, ListboxItem } from "@nextui-org/react";
-import { Link } from "react-router-dom";
-import { SiFacebook } from "react-icons/si";
-import { TbBrandYoutubeFilled } from "react-icons/tb";
-import { FaSquareXTwitter, FaPhone } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
-import { IoLocation } from "react-icons/io5";
 import { Typography } from "@material-tailwind/react";
 
 // Local Files
@@ -30,12 +23,6 @@ const SITEMAP = [
   },
 ];
  
-const currentYear = new Date().getFullYear();
-
-
-
-    
-  
 
 const Footer = () => {
   return (

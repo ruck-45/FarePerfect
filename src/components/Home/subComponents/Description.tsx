@@ -1,5 +1,5 @@
-import p1 from "../assets/used.jpg";
-import p2 from "../assets/new.jpg";
+import p1 from "../assets/plane.jpg";
+import p2 from "../assets/hotel.jpg";
 import ServiceImage from "./ServiceImage";
 
 const Description = () => {
@@ -8,7 +8,7 @@ const Description = () => {
       <div className="bg-white flex flex-col items-center justify-center gap-5">
         <div>
           <h1 className="md:text-5xl text-center text-2xl text-black font-bold font-serif pt-[10rem]">
-            <span className="text-yellow-600">OUR</span> PRODUCTS
+            <span className="text-yellow-600">OUR</span> SERVICES
           </h1>
           <div className="md:h-[0.3rem] h-1 bg-black w-20 md:w-40 text-white  mx-[23rem] mb-[4rem]"></div>
         </div>
