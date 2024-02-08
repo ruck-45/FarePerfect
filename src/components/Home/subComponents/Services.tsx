@@ -56,7 +56,7 @@ const Services = () => {
         <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-6 justify-center">
           {servicesData.map((service, index) => (
             <Card key={index} photo={service.photo} title={service.title} des={service.description} />
-          ))} */}
+          ))}
         </div>
       </div>
     </div>

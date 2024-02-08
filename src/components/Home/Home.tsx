@@ -12,6 +12,7 @@ import Description from "./subComponents/Description";
 import Abovefoter from "./subComponents/Abovefoter";
 import Product from "./subComponents/Product";
 import FlightBooking from "./subComponents/FlightBooking";
+import Mission from "../../globalSubComponents/Mission";
 
 const Home = () => {
   const dispatch = useDispatch();
