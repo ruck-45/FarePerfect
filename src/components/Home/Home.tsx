@@ -5,10 +5,10 @@ import { useDispatch } from "react-redux";
 import { updateTab } from "../../store/curTabSlice";
 import HeroSection from "./subComponents/HeroSection";
 import Benefit from "./subComponents/Benefit";
-import Mission from "../../globalSubComponents/Mission";
+
 import Achievement from "./subComponents/Achievement";
 import Help from "./subComponents/Help";
-import Services from "./subComponents/Services";
+
 import Description from "./subComponents/Description";
 import Abovefoter from "./subComponents/Abovefoter";
 import Product from "./subComponents/Product";
@@ -26,16 +26,15 @@ const Home = () => {
   return (
     <div>
       <HeroSection />
-      <Benefit/>
-      <Mission />
+      <Benefit />
+   
       <Achievement />
       {/* <Help /> */}
-      <Services />
-      <Description/>
-      <Testimonials/>
-      <Product/>
-      <Abovefoter/>
       
+      <Description />
+      <Testimonials />
+      <Product />
+      <Abovefoter />
     </div>
   );
 };

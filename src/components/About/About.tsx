@@ -3,10 +3,9 @@ import { useDispatch } from "react-redux";
 
 // Local Files
 import { updateTab } from "../../store/curTabSlice";
-import Mission from "../../globalSubComponents/Mission";
 import Specialization from "./subComponents/Specialization";
 import Intro from "../../globalSubComponents/Intro";
-import Benefit from "../Home/subComponents/Benefit";
+import Define from "./subComponents/Define";
 
 const About = () => {
   const dispatch = useDispatch();
@@ -17,16 +16,13 @@ const About = () => {
     behavior: "smooth",
   });
 
-  const title= {des:"About"}
+  const title = { des: "About" };
 
   return (
     <div>
-      <Intro des={title.des}/>
-      <Specialization/>
-      <Benefit/>
-      <Mission />
-     
-      
+      <Intro des={title.des} />
+      <Specialization />
+      <Define />
     </div>
   );
 };

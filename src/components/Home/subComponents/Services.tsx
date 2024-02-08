@@ -7,7 +7,6 @@ import { RiServiceFill } from "react-icons/ri";
 import { GiMoneyStack } from "react-icons/gi";
 
 // Local Files
-import Card from "../../../globalSubComponents/Card";
 
 
 // Define your data as a JSON object
@@ -55,9 +54,9 @@ const Services = () => {
     <div className="bg-white md:h-[35rem] h-auto w-full">
       <div className="bg-white h-full text-black md:mx-[8rem] mx-[2rem] rounded-sm">
         <div className="md:grid md:grid-cols-3 md:gap-8 flex flex-col justify-between items-center gap-6">
-          {servicesData.map((service, index) => (
+          {/* {servicesData.map((service, index) => (
             <Card key={index} photo={service.photo} title={service.title} des={service.description} />
-          ))}
+          ))} */}
         </div>
       </div>
     </div>
