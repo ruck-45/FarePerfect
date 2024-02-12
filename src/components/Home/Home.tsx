@@ -11,6 +11,8 @@ import Product from "./subComponents/Product";
 import FlightBooking from "./subComponents/FlightBooking";
 import WhyChooseUs from "../../globalSubComponents/WhyChooseUs";
 import Popover from "./subComponents/Popover";
+import Dine from "../../globalSubComponents/Dine/Dine";
+import Call from "../../globalSubComponents/Call";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -29,6 +31,8 @@ const Home = () => {
       <WhyChooseUs />
       <OurServices />
       <OurPromise />
+      <Dine/>
+      <Call/>
       <Product />
       <Abovefoter />
     </div>
