@@ -56,7 +56,7 @@ const Services = () => {
         <div className="md:grid md:grid-cols-3 md:gap-8 flex flex-col justify-between items-center gap-6">
           {/* {servicesData.map((service, index) => (
             <Card key={index} photo={service.photo} title={service.title} des={service.description} />
-          ))} */}
+          ))}
         </div>
       </div>
     </div>
