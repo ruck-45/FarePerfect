@@ -9,7 +9,7 @@ const Call = () => {
             Call Now
           </h2>
           <h1 className="font-bold font-sans text-black md:text-2xl text-1xl text-center">
-            Call For Reservations: +1 844-671-7473
+            Call For Reservations: +1 (844) 671-7473
           </h1>
         </div>
       </div>

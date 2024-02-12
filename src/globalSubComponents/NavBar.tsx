@@ -59,7 +59,7 @@ const NavBar = () => {
           <NavbarItem>
             <div className="flex flex-row gap-2">
               <FaPhone className="text-black" size={20} />
-              <span className="text-white text-md">Call Now : +1-888-305-2301</span>
+              <span className="text-white text-md">Call Now : +1 (844) 671-7473</span>
             </div>
           </NavbarItem>
         </NavbarContent>
@@ -137,13 +137,13 @@ const NavBar = () => {
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarItem className="hidden lg:flex">
-            <a className="flex gap-[1rem]" href="tel:+1 (888) 891-7176">
+            <a className="flex gap-[1rem]" href="tel:+1 (844) 671-7473">
               <Button isIconOnly variant="solid" color="warning" className="w-[3rem] h-[3rem] text-[1.5rem]">
                 <FaPhone />
               </Button>
               <div>
                 <p>Call us for Lowest Airfares</p>
-                <p>+1 (888) 891-7176</p>
+                <p>+1 (844) 671-7473</p>
               </div>
             </a>
           </NavbarItem>
