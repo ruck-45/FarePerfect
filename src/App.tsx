@@ -21,8 +21,8 @@ function App() {
     <>
       {curTab === "Auth" ? null : <NavBar />}
       <Routes>
-        <Route path="/" element={<Navigate to="/Home" />} />
-        <Route path="/Home" element={<Home />} />
+        {/* <Route path="/" element={<Navigate to="/Home" />} />
+        <Route path="/Home" element={<Home />} /> */}
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Privacy" element={<Privacy />} />
