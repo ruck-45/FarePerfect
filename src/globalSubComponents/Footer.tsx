@@ -14,7 +14,7 @@ const SITEMAP = [
   },
   {
     title: "About Us",
-    links: ["About FairPerfect", "Blog", "Press Room", "Careers"],
+    links: ["About FarePerfect", "Blog", "Press Room", "Careers"],
   },
   {
     title: "Contact",

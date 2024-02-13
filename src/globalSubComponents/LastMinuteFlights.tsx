@@ -22,14 +22,14 @@ const LastMinuteFlights = () => {
         <div className="flex flex-col gap-2">
           <h1 className="text-xl font-bold">Last-Minute Flight Tickets Made Affordable</h1>
           <p>
-            We understand the unpredictable nature of last-minute travel plans, which is why FairPerfect is dedicated to
+            We understand the unpredictable nature of last-minute travel plans, which is why FarePerfect is dedicated to
             providing stress-free and budget-friendly booking solutions for spontaneous trips. Whether you're planning a
             spontaneous domestic getaway, a short-haul adventure, or an impromptu international journey, rest assured,
-            FairPerfect has your back with our exclusive last-minute flight deals.
+            FarePerfect has your back with our exclusive last-minute flight deals.
           </p>
         </div>
         <div className="flex flex-col gap-2">
-          <h1 className="text-xl font-bold">How to Find Last-Minute Cheap Flights with FairPerfect?</h1>
+          <h1 className="text-xl font-bold">How to Find Last-Minute Cheap Flights with FarePerfect?</h1>
           <p>
             Step 1: Embrace Flexibility: Flexibility is key when it comes to securing last-minute flights at great
             prices. Consider being open to flying late or opting for red-eye flights, which often come with more
@@ -45,7 +45,7 @@ const LastMinuteFlights = () => {
           <p>
             Step 3: Explore Multiple Destinations: Keeping an open mind about your destination can lead to exciting
             opportunities and great deals. By considering multiple locations for your last-minute getaway, you increase
-            your chances of finding the perfect flight deal with FairPerfect. Whether you're in the mood for a beach
+            your chances of finding the perfect flight deal with FarePerfect. Whether you're in the mood for a beach
             escape, a city adventure, or a mountain retreat, our extensive network of flights offers something for every
             traveler.
           </p>
@@ -68,7 +68,7 @@ const LastMinuteFlights = () => {
           </p>
           <p>
             Ready to embark on your spontaneous adventure? Explore our extensive range of last-minute flight deals at
-            FairPerfect and turn your travel dreams into reality without breaking the bank. With our user-friendly
+            FarePerfect and turn your travel dreams into reality without breaking the bank. With our user-friendly
             booking platform and unbeatable prices, planning your next spontaneous getaway has never been easier.
           </p>
         </div>
