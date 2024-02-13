@@ -1,7 +1,6 @@
 // Dependencies
 import { Typography } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
-// Local Files
 
 const SITEMAP = [
   {
@@ -22,12 +21,44 @@ const SITEMAP = [
   },
 ];
 
+const airlines = [
+  "Air Canada",
+  "American Airlines",
+  "Alaska Airlines",
+  "Air France",
+  "British Airways",
+  "Copa Airlines",
+  "Delta Airlines",
+  "Iberia Airlines",
+  "JetBlue Airlines",
+  "Lufthansa Airlines",
+  "LOT Polish Airlines",
+  "Virgin Atlantic",
+  "Southwest Airlines",
+  "Swiss International",
+  "TAP Air Portugal",
+  "United Airlines",
+  "EVA Air Airlines",
+];
 
 const Footer = () => {
   return (
     <>
-      <footer className="relative w-full">
-        <div className="mx-auto w-full max-w-7xl px-8">
+      <footer className="flex flex-col items-center">
+        <div className="text-white w-[80%] py-[2rem] flex flex-col gap-[1rem]">
+          <h1 className="font-bold opacity-50 text-2xl">Disclaimer :</h1>
+          <div className="">
+            Please note that FarePerfect operates as an independent travel agency. Our extremely reduced offers are
+            non-refundable and come with restrictions on date and routing changes after ticketing and before travel.
+            Savings may vary without prior notice, and additional limitations may apply. By using our service, customers
+            explicitly agree that they do so at their sole risk. FarePerfect, its affiliates, and their respective
+            employees, agents, third-party content providers, or licensors do not warrant that our service will be
+            uninterrupted or error-free. Nor do they make any warranties regarding the results that may be obtained from
+            using our service or the accuracy, reliability, or content of any information, service, or inventory
+            provided through FarePerfect.
+          </div>
+        </div>
+        <div className="w-[80%] border-t">
           <div className="mx-auto grid w-full grid-cols-1 text-white gap-8 py-12 md:grid-cols-2 lg:grid-cols-4">
             {SITEMAP.map(({ title, links }, key) => (
               <div key={key} className="w-full">
@@ -48,6 +79,16 @@ const Footer = () => {
                 </ul>
               </div>
             ))}
+          </div>
+          <div className="text-white py-[2rem] flex flex-col gap-[1rem] border-t">
+            <h1 className="font-bold opacity-50 text-2xl">Top Airlines :</h1>
+            <div className="grid grid-cols-2 md:grid-cols-4">
+              {airlines.map((data, index) => (
+                <li key={data} className="cursor-pointer hover:translate-x-0.5 transition">
+                  {data}
+                </li>
+              ))}
+            </div>
           </div>
           <div className="flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4  ">
             <div className="flex gap-4 text-blue-gray-900 sm:justify-center text-white">
@@ -122,7 +163,7 @@ const Footer = () => {
         </div>
       </footer>
       <div className="h-[5rem] bg-yellow-500 text-black-400 text-small md:text-large font-extralight flex flex-col items-center justify-center px-[2rem] ">
-        © 2024 FAIR PERFECT • All Rights Reserved
+        © 2024 Fairperfect • All Rights Reserved • Designed By TMIS with 🖤
       </div>
     </>
   );
