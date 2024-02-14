@@ -1,21 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.2206d48e.css",
-    "main.js": "/static/js/main.914a55ed.js",
+    "main.css": "/static/css/main.406a50c0.css",
+    "main.js": "/static/js/main.ba63e3fa.js",
+    "static/media/malasia.jpg": "/static/media/malasia.7b64a75dd9b2eef9cd12.jpg",
+    "static/media/maldives.jpg": "/static/media/maldives.4f2c7832c01728982b64.jpg",
+    "static/media/bali.jpg": "/static/media/bali.ddc0c830b3daafaeed3b.jpg",
     "static/media/random.jpg": "/static/media/random.91eebe510669d2ab7d8a.jpg",
+    "static/media/paris.jpg": "/static/media/paris.c3d9504e667cf4698686.jpg",
     "static/media/2151205393.jpg": "/static/media/2151205393.a399e26c139ea4ab0d49.jpg",
     "static/media/lug.jpg": "/static/media/lug.e066fbe8f3b06dfcb2dd.jpg",
     "static/media/bag (1).jpg": "/static/media/bag (1).e3cbf9f6b8b1e0773ebf.jpg",
     "static/media/travelContact.jpg": "/static/media/travelContact.7408ab5402f2001f3df7.jpg",
     "static/media/lastMinute.jpg": "/static/media/lastMinute.211564788bfc70a13d1e.jpg",
+    "static/media/dubai.jpg": "/static/media/dubai.79b679e7b677979cefba.jpg",
     "static/media/cus.jpg": "/static/media/cus.b5c754f9d3579423b8a3.jpg",
     "static/media/logo.svg": "/static/media/logo.7ab523de946482b90dd0e496f3054e7f.svg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.2206d48e.css.map": "/static/css/main.2206d48e.css.map",
-    "main.914a55ed.js.map": "/static/js/main.914a55ed.js.map"
+    "main.406a50c0.css.map": "/static/css/main.406a50c0.css.map",
+    "main.ba63e3fa.js.map": "/static/js/main.ba63e3fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.2206d48e.css",
-    "static/js/main.914a55ed.js"
+    "static/css/main.406a50c0.css",
+    "static/js/main.ba63e3fa.js"
   ]
 }
