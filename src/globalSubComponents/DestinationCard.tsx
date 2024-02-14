@@ -1,20 +1,126 @@
-import { Card, CardFooter, Image, Button } from "@nextui-org/react";
+import { Card, CardFooter, Image } from "@nextui-org/react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider, { Settings } from "react-slick";
 import dubai from "../globalAssets/images/dubai.jpg";
+import maldives from "../globalAssets/images/maldives.jpg";
+import malasia from "../globalAssets/images/malasia.jpg";
+import bali from "../globalAssets/images/bali.jpg";
+import paris from "../globalAssets/images/paris.jpg";
+const content = [
+  {
+    place: "DUBAI",
+    pic: dubai,
+    title: "Explore Dubai",
+    des: "Experience the vibrant cityscape of Dubai. From iconic skyscrapers...",
+  },
+  {
+    place: "PARIS",
+    pic: paris,
+    title: "Explore Paris",
+    des: "Experience the vibrant cityscape of Paris. From iconic skyscrapers...",
+  },
+  {
+    place: "MALDIVES",
+    pic: maldives,
+    title: "Explore Maldives",
+    des: "Experience the vibrant cityscape of Maldives. From iconic skyscrapers...",
+  },
+  {
+    place: "BALI",
+    pic: bali,
+    title: "Explore Bali",
+    des: "Experience the vibrant cityscape of Bali. From iconic skyscrapers...",
+  },
+  {
+    place: "MALASIA",
+    pic: malasia,
+    title: "Explore Malasia",
+    des: "Experience the vibrant cityscape of malasia. From iconic skyscrapers...",
+  },
+];
+
+function SampleNextArrow(props: any) {
+  const { className, style, onClick } = props;
+  return <div className={className} style={{ ...style, display: "block", background: "black" }} onClick={onClick} />;
+}
+
 const DestinationCard = () => {
+  const settings: Settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    className: "max-w-[65rem] mx-auto",
+    focusOnSelect: true,
+    centerMode: true,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SampleNextArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+          className: "max-w-[50rem] mx-auto",
+        },
+      },
+      {
+        breakpoint: 880,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2,
+          className: "max-w-[35rem] mx-auto",
+        },
+      },
+      {
+        breakpoint: 645,
+        settings: {
+          fade: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+          className: "max-w-[20rem] mx-auto",
+          swipeToSlide: true,
+        },
+      },
+    ],
+  };
+
   return (
-    <div className="p-[8rem]">
-      <Card isFooterBlurred radius="lg" className="border-none w-[14rem] h-[20rem]">
-        <Image alt="Dubai" className="object-cover w-[14rem] h-[20rem]" src={dubai} />
-        <CardFooter className="justify-start before:bg-white/10 border-white/20 border-1 overflow-hidden py-2 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-          <div className="flex flex-col">
-            <p className="text-white/80">DUBAI</p>
-            <p className="text-md text-white/80 font-bold">Explore Dubai</p>
-            <p className="text-tiny text-white/80">
-              Experience the vibrant cityscape of Dubai. From iconic skyscrapers...
-            </p>
-          </div>
-        </CardFooter>
-      </Card>
+    <div className="flex flex-col justify-center items-center bg-white ">
+      <div className="">
+        <h1 className="text-5xl font-bold font-serif text-black text-center">
+          Popular <span className="text-yellow-600">Destination</span>
+        </h1>
+        <h2 className="text-center font-bold font-serif py-[1.5rem]">
+          Enjoy Your <span className="text-yellow-600">Destination</span>{" "}
+        </h2>
+      </div>
+      <div className="p-[3.5rem] gap-6 slider-container">
+        <Slider {...settings}>
+          {content.map((e, index) => (
+            <div key={index} className="w-auto">
+              <Card isFooterBlurred radius="lg" className="border-none w-[14rem] h-[20rem]">
+                <Image alt={e.place} className="object-cover w-auto h-[20rem]" src={e.pic} />
+                <CardFooter className="justify-start before:bg-white/10 border-white/20 border-1 overflow-hidden py-2 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
+                  <div className="flex flex-col">
+                    <p className="text-white/80">{e.place}</p>
+                    <p className="text-md text-white/80 font-bold">{e.title}</p>
+                    <p className="text-tiny text-white/80">{e.des}</p>
+                  </div>
+                </CardFooter>
+              </Card>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 };

@@ -19,7 +19,7 @@ const missionData = [
   {
     category: "Customer Support",
     icon: MdDataExploration, // Replace with Actual width height photo
-    details: "Email at support@fairperfect.com. All your concerns would be addressed at the earliest.",
+    details: "Email at support@fareperfect.com. All your concerns would be addressed at the earliest.",
   },
 ];
 
