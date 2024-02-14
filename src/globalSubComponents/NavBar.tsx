@@ -14,11 +14,11 @@ import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import { FaLocationDot } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa6";
+
 // Local Files
 import "./NavBar.css";
 import logo from "../globalAssets/logo.svg";
@@ -43,7 +43,7 @@ const NavBar = () => {
         onMenuOpenChange={() => {
           dispatch(updateNavStatus(!navOpenStatus));
         }}
-        className="h-[3rem] py-[1.2rem] nav z-[200] bg-yellow-400 justify-center hidden lg:flex "
+        className="h-[3rem] py-[1.2rem] nav z-[200] bg-yellow-400 justify-center hidden lg:flex"
         maxWidth="xl"
         isBordered
       >
@@ -51,7 +51,7 @@ const NavBar = () => {
           <NavbarItem>
             <div className="flex flex-row gap-2">
               <MdEmail className="text-black" size={22} />
-              <span className="text-white text-md">Email : support@villa.com</span>
+              <span className="text-white text-md">Email : support@fareperfect.com</span>
             </div>
           </NavbarItem>
           <Divider orientation="vertical" className="h-6" />

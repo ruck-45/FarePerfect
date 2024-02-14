@@ -51,10 +51,10 @@ const servicesData = [
 
 const OurPromise = () => {
   return (
-    <div className="bg-white w-full pb-[3rem]">
+    <div className="bg-white w-full">
       <div className="flex flex-col items-center py-[3rem]">
         <h1 className="text-center text-4xl sm:text-5xl text-black font-bold font-serif">
-          <span className="text-yellow-600">OUR</span> PROMISE
+          <span className="text-yellow-400">OUR</span> PROMISE
         </h1>
         <div className="md:h-[0.3rem] h-1 bg-black w-20 md:w-40 text-white"></div>
       </div>

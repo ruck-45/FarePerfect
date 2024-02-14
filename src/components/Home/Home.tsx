@@ -6,8 +6,8 @@ import { updateTab } from "../../store/curTabSlice";
 import HeroSection from "./subComponents/HeroSection";
 import OurPromise from "./subComponents/OurPromise";
 import OurServices from "./subComponents/OurServices";
-import Abovefoter from "./subComponents/Abovefoter";
-import Product from "./subComponents/Product";
+import Map from "./subComponents/Map";
+import BookAFlight from "./subComponents/BookAFlight";
 import FlightBooking from "./subComponents/FlightBooking";
 import WhyChooseUs from "../../globalSubComponents/WhyChooseUs";
 import Popover from "./subComponents/Popover";
@@ -32,10 +32,10 @@ const Home = () => {
       <WhyChooseUs />
       <OurServices />
       <OurPromise />
-      <Dine/>
-      <Call/>
-      <Product />
-      <Abovefoter />
+      <Dine />
+      <Call />
+      <BookAFlight />
+      <Map />
     </div>
   );
 };
