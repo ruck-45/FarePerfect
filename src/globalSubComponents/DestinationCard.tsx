@@ -82,12 +82,12 @@ const DestinationCard = () => {
       {
         breakpoint: 645,
         settings: {
-          fade: true,
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 2,
-          className: "max-w-[20rem] mx-auto",
+          className: "max-w-[22rem] mx-auto",
           swipeToSlide: true,
+          arrows: undefined,
         },
       },
     ],
