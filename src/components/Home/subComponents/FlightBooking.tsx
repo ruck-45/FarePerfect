@@ -7,7 +7,7 @@ import { IoPeople, IoSend } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
-
+import "./Flight.css";
 const flightClass = [
   {
     name: "Economy",
@@ -31,11 +31,11 @@ const FlightBooking = () => {
   const [roundTrip, setRoundTrip] = useState(false);
 
   return (
-    <div className="bg-white flex flex-col justify-center items-center py-[3rem]">
-      <h1 className="text-5xl font-bold font-serif text-black text-center">
-        Next <span className="text-[#0a97b0]">Trip</span>
+    <div className="flex flex-col justify-center items-center py-[3rem] flightBg">
+      <h1 className="text-5xl font-bold font-serif text-white text-center">
+        Book <span className="text-[#0a97b0]">Flights</span>
       </h1>
-      <h2 className="text-center font-bold font-serif py-[1.5rem]">
+      <h2 className="text-center font-bold font-serif text-white py-[1.5rem]">
         Plan Your <span className="text-[#0a97b0]">Next Trip</span>{" "}
       </h2>
       <div className="w-[100%] sm:w-[80%] p-[3rem] bg-white rounded-xl md:drop-shadow-xl border-2 flex flex-col gap-[2rem]">

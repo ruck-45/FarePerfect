@@ -13,6 +13,7 @@ import Dine from "../../globalSubComponents/Dine/Dine";
 import Call from "../../globalSubComponents/Call";
 import DestinationCard from "../../globalSubComponents/DestinationCard";
 import Slider from "../../globalSubComponents/Carasoul/Slider";
+import FlightBooking from "./subComponents/FlightBooking";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -27,6 +28,7 @@ const Home = () => {
     <div className="max-w-[100vw] overflow-x-hidden">
       <Popover />
       <Slider/>
+      <FlightBooking/>
       <DestinationCard/>
       <WhyChooseUs />
       <OurServices />
