@@ -6,9 +6,9 @@ type cardProps = {
 
 const Intro = (props: cardProps) => {
   return (
-    <div className={`h-[12rem] bg-[#0a97b0] flex flex-row items-center justify-start`}>
+    <div className={`h-[12rem] bg-[#0a97b0] flex flex-row items-center justify-center`}>
       <div className="md:px-[8rem] px-[2rem]">
-        <h1 className="text-bold text-4xl font-normal text-start text-white">{props.des}</h1>
+        <h1 className="text-bold text-4xl font-normal text-center text-white">{props.des}</h1>
       </div>
     </div>
   );

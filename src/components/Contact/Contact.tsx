@@ -6,10 +6,11 @@ import Map from "./subComponent/Map";
 import Intro from "../../globalSubComponents/Intro";
 
 // Local Files
-
+import { updateTab } from "../../store/curTabSlice";
 
 const Contact = () => {
-
+  const dispatch = useDispatch();
+  dispatch(updateTab("Contact"));
   const title = { des: "Contact Us" };
 
   return (

@@ -12,7 +12,6 @@ const OurServices = () => {
         </div>
       </div>
       <div className="flex bg-white lg:flex-row flex-col items-center justify-evenly md:p-[5rem] p-[2rem] gap-10">
-        {/* content */}
         <div className="flex flex-col justify-center lg:items-end items-start">
           <div className="py-[2rem]">
             <h1 className=" font-bold text-4xl text-[#0a97b0]">
@@ -31,8 +30,6 @@ const OurServices = () => {
             <button className="py-[1rem] px-[2rem] bg-[#0a97b0] text-white">Read More</button>
           </div>
         </div>
-
-        {/* photo */}
         <div className=" lg:inline-block hidden ">
           <div>
             <img
@@ -44,7 +41,7 @@ const OurServices = () => {
         </div>
       </div>
 
-      <div className="flex bg-white lg:flex-row flex-col items-center justify-evenly md:px-[5rem] px-[2rem] gap-10">
+      <div className="flex bg-white lg:flex-row flex-col items-center justify-evenly md:px-[5rem] px-[2rem] py-[2rem] gap-10">
         {/* photo */}
         <div className=" lg:inline-block hidden ">
           <div>
