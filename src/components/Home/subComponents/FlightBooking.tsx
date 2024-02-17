@@ -31,13 +31,9 @@ const FlightBooking = () => {
   const [roundTrip, setRoundTrip] = useState(false);
 
   return (
-    <div className="flex flex-col justify-center items-center py-[3rem] flightBg">
-      <h1 className="text-5xl font-bold text-white text-center">
-        Book <span className="text-[#0a97b0]">Flights</span>
-      </h1>
-      <h2 className="text-center font-bold  text-white py-[1.5rem]">
-        Plan Your <span className="text-[#0a97b0]">Next Trip</span>{" "}
-      </h2>
+    <div className="flex flex-col justify-center items-center py-[5rem] ">
+      <h1 className="text-5xl font-bold text-white text-center">Book Flights</h1>
+      <h2 className="text-center font-bold  text-white py-[1.5rem]">Plan Your Next Trip</h2>
       <div className="w-[100%] sm:w-[80%] p-[3rem] bg-white rounded-xl md:drop-shadow-xl border-2 flex flex-col gap-[2rem]">
         <RadioGroup
           orientation="horizontal"

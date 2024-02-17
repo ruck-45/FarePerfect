@@ -74,7 +74,7 @@ const NavBar = () => {
       <Navbar
         isMenuOpen={navOpenStatus}
         onMenuOpenChange={setIsMenuOpen}
-        className=" bg-white z-[200] h-[5rem] nav"
+        className=" bg-white md:z-[200] h-[5rem] nav"
         maxWidth="xl"
         isBordered
       >
@@ -84,9 +84,9 @@ const NavBar = () => {
             <Image width={90} src={logo} alt="logo" radius="none" className="hidden lg:block" />
           </Link>
         </NavbarContent>
-        <NavbarContent className="lg:hidden logo">
+        <NavbarContent className="lg:hidden logo mr-[30%]">
           <Link to="../Home">
-            <Image width={120} src={logo} alt="logo" radius="none" />
+            <Image width={90} src={logo} alt="logo" radius="none" />
           </Link>
         </NavbarContent>
 

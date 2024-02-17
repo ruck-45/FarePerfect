@@ -83,7 +83,7 @@ const quickLinks = [
   { name: "FAQ'S", to: "" },
   { name: "First Class Flights", to: "" },
   { name: "Business Class Flights", to: "" },
-  { name: "About Tripcanny", to: "../About" },
+  { name: "About Fareperfect", to: "../About" },
   { name: "Privacy Policy", to: "./Privacy" },
   { name: "Contact Us", to: "./Contact" },
   { name: "Refund Policy", to: "./Refund" },
@@ -98,14 +98,14 @@ const Footer = () => {
         <div className="text-white w-[80%] py-[2rem] flex flex-col gap-[1rem]">
           <h1 className="font-bold opacity-50 text-2xl">Disclaimer :</h1>
           <div className="">
-            Please note that Tripcanny operates as an independent travel agency. Our extremely reduced offers are
+            Please note that fareperfect operates as an independent travel agency. Our extremely reduced offers are
             non-refundable and come with restrictions on date and routing changes after ticketing and before travel.
             Savings may vary without prior notice, and additional limitations may apply. By using our service, customers
-            explicitly agree that they do so at their sole risk. Tripcanny, its affiliates, and their respective
+            explicitly agree that they do so at their sole risk. Fareperfect, its affiliates, and their respective
             employees, agents, third-party content providers, or licensors do not warrant that our service will be
             uninterrupted or error-free. Nor do they make any warranties regarding the results that may be obtained from
             using our service or the accuracy, reliability, or content of any information, service, or inventory
-            provided through Tripcanny.
+            provided through fareperfect.
           </div>
         </div>
         <div className="w-[80%] border-t">

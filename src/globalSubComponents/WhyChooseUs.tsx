@@ -1,8 +1,5 @@
 //Dependicies
-import "./Whychoseus.css"
-
-
-
+import "./Whychoseus.css";
 
 const WhyChooseUs = () => {
   return (
@@ -11,7 +8,7 @@ const WhyChooseUs = () => {
       <div className="flex flex-col justify-center items-start">
         <div className="py-[2rem]">
           <h1 className=" font-bold text-4xl text-white">
-            About <span className="text-white">Us</span>
+            Who Are <span className="text-white">We ?</span>
           </h1>
         </div>
         <div className="py-[1rem] ">

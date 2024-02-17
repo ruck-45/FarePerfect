@@ -4,7 +4,7 @@
 }
 
 :root {
-  --heights: 80vh;
+  --heights: 100vh;
   --widths: 100%;
 }
 
@@ -35,7 +35,7 @@
   height: 100%;
   position: absolute;
   object-fit: cover;
-  filter:brightness(50%)
+  filter: brightness(50%);
 }
 
 .slide-title,
@@ -46,18 +46,16 @@
   font-size: 60px;
   position: absolute;
   text-align: center;
-  top: 60%;
+  top: 35%;
   z-index: 10;
-  font-family:  serif;
+  font-family: serif;
   font-weight: bold;
 }
 
 .slide-text {
-  
   font-style: serif;
-  top: 75%;
+  top: 47%;
   font-size: 2rem;
-  
 }
 
 .prev,
@@ -66,7 +64,7 @@
   cursor: pointer;
   z-index: 100;
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: auto;
   padding: 1rem;
   margin-top: -3rem;
@@ -75,8 +73,9 @@
   border-radius: 0px 5px 5px 0px;
 }
 
-.slider-container:hover .prev,.slider-container:hover .next {
-  color: white
+.slider-container:hover .prev,
+.slider-container:hover .next {
+  color: white;
 }
 
 .slider-container:hover .prev:hover,
@@ -120,10 +119,10 @@
   background-color: rgba(255, 255, 255, 0.5);
 } */
 
-.slider-container:hover .dot{
+.slider-container:hover .dot {
   background-color: rgba(0, 0, 0, 0.3);
 }
-.slider-container:hover .active-dot{
+.slider-container:hover .active-dot {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
