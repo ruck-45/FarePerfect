@@ -51,11 +51,15 @@ const servicesData = [
 
 const OurPromise = () => {
   return (
-    <div className="grid grid-cols-4 lg:grid-cols-6 bg-[#f8f9fa] overflow-hidden">
-      <div className="hidden lg:flex col-span-2 justify-end items-end">
-        <Image src={benifits} alt="benifit image" className="h-[32rem] w-[35rem]" />
-      </div>
-      <div className="col-span-4 flex flex-col gap-y-[5rem] items-center px-[2rem] py-[4rem]">
+    <div className="flex bg-[#f8f9fa] overflow-hidden">
+      <div
+        className="hidden lg:flex  bg-no-repeat bg-center bg-cover w-[90rem] h-auto"
+        style={{
+          backgroundImage: `url("https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
+        }}
+      ></div>
+      {/* <Image src="" alt="benifit image" className="h-auto w-[130rem]" radius="none" /> */}
+      <div className="flex flex-col gap-y-[5rem] items-center px-[2rem] py-[4rem]">
         <h1 className="text-center text-4xl sm:text-5xl text-black font-bold ">
           OUR <span className="text-[#0a97b0]">BENIFITS</span>
         </h1>
