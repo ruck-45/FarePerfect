@@ -7,7 +7,6 @@ import OurPromise from "./subComponents/OurPromise";
 import OurServices from "./subComponents/OurServices";
 import Map from "./subComponents/Map";
 import BookAFlight from "./subComponents/BookAFlight";
-import FlightBooking from "./subComponents/FlightBooking";
 import WhyChooseUs from "../../globalSubComponents/WhyChooseUs";
 import Popover from "./subComponents/Popover";
 import Dine from "../../globalSubComponents/Dine/Dine";

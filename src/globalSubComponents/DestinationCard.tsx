@@ -117,21 +117,19 @@ const DestinationCard = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center bg-[#fffcf2] py-[3rem]">
-      <div className="">
-        <h1 className="text-5xl font-bold font-serif text-black text-center">
-          Popular <span className="text-[#0a97b0]">Destinations</span>
-        </h1>
-        <h2 className="text-center font-bold font-serif py-[1.5rem]">
-          Enjoy Your <span className="text-[#0a97b0]">Destination</span>{" "}
-        </h2>
-      </div>
-      <div className="p-[3.5rem] gap-6 slider-container">
+    <div className="flex flex-col justify-center items-center py-[3rem]">
+      <h1 className="text-5xl font-bold font-serif text-white text-center">
+        Popular <span className="text-[#0a97b0]">Destinations</span>
+      </h1>
+      <h2 className="text-center font-bold font-serif text-white py-[1.5rem]">
+        Enjoy Your <span className="text-[#0a97b0]">Destination</span>{" "}
+      </h2>
+      <div className="slider-container">
         <Slider {...settings}>
           {content.map((e, index) => (
             <div key={index} className="w-auto">
               <Card isFooterBlurred radius="lg" className="border-none w-[14rem] h-[20rem]">
-                <Image alt={e.place} className="object-cover w-auto h-[20rem]" src={e.pic} />
+                <Image alt={e.place} className="object-cover w-[15rem] h-[20rem]" src={e.pic} />
                 <CardFooter className="justify-start before:bg-white/10 border-white/20 border-1 overflow-hidden py-2 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
                   <div className="flex flex-col">
                     <p className="text-white/80">{e.place}</p>
