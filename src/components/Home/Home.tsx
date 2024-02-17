@@ -3,7 +3,6 @@ import { useDispatch } from "react-redux";
 
 // Local Files
 import { updateTab } from "../../store/curTabSlice";
-import HeroSection from "./subComponents/HeroSection";
 import OurPromise from "./subComponents/OurPromise";
 import OurServices from "./subComponents/OurServices";
 import Map from "./subComponents/Map";
@@ -14,6 +13,7 @@ import Popover from "./subComponents/Popover";
 import Dine from "../../globalSubComponents/Dine/Dine";
 import Call from "../../globalSubComponents/Call";
 import DestinationCard from "../../globalSubComponents/DestinationCard";
+import Slider from "../../globalSubComponents/Carasoul/Slider";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -26,8 +26,8 @@ const Home = () => {
 
   return (
     <div className="max-w-[100vw] overflow-x-hidden">
-      <HeroSection />
-      <FlightBooking />
+      <Popover />
+      <Slider/>
       <DestinationCard/>
       <WhyChooseUs />
       <OurServices />

@@ -1,0 +1,7 @@
+.Bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5)), url("./assets/fli.jpg");
+  background-repeat: inherit;
+  background-position: center;
+  background-size: cover;
+  
+}

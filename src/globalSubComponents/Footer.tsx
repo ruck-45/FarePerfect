@@ -1,95 +1,166 @@
 // Dependencies
 import { Typography } from "@material-tailwind/react";
-import { Link } from "react-router-dom";
-
-const SITEMAP = [
-  {
-    title: "Flights",
-    links: ["Book Flights", "Flight Status", "Flight Deals", "Manage Booking"],
-  },
-  {
-    title: "Destinations",
-    links: ["Destination Guides", "Travel Tips", "Travel Blog"],
-  },
-  {
-    title: "About Us",
-    links: ["About FarePerfect", "Blog", "Press Room", "Careers"],
-  },
-  {
-    title: "Contact",
-    links: ["Customer Support", "Partner with Us", "Privacy Policy"],
-  },
-];
+import { Link, useNavigate } from "react-router-dom";
 
 const airlines = [
-  "Air Canada",
-  "American Airlines",
-  "Alaska Airlines",
-  "Air France",
-  "British Airways",
-  "Copa Airlines",
-  "Delta Airlines",
-  "Iberia Airlines",
-  "JetBlue Airlines",
-  "Lufthansa Airlines",
-  "LOT Polish Airlines",
-  "Virgin Atlantic",
-  "Southwest Airlines",
-  "Swiss International",
-  "TAP Air Portugal",
-  "United Airlines",
-  "EVA Air Airlines",
+  "Alaska Airline",
+  "Virgin America",
+  "Austrian Airlines",
+  "Mokulele Airlines",
+  "Endeavor Air",
+  "Qatar Airways",
+  "Finnair",
+  "Great Lakes",
+  "Allegiant Air",
+  "Egyptair Airlines",
+  "GOL Airlines",
+  "Air Serbia",
+  "Frontier Airlines",
+  "Emirates Airlines",
+  "Air Arabia",
+  "Qantas Airways",
+  "Hawaiian Airlines",
+  "Volaris Airlines",
+  "Flydubai",
+  "Japan Airlines",
+  "Porter Airlines",
+  "Caribbean Airlines",
+  "Hainan Airlines",
+  "WestJet Airlines",
+];
+
+const destinations = [
+  "Bakersfield",
+  "Boston",
+  "Charlotte",
+  "Tucson",
+  "Kansas City",
+  "New York City",
+  "Cleveland",
+  "Oakland",
+  "Las Vegas",
+  "San Diego",
+  "San Antonio",
+  "Sacramento",
+  "Denver",
+  "Houston",
+  "Indianapolis",
+  "Colorado Springs",
+  "Tampa",
+  "Chicago",
+  "Columbus",
+  "Washington DC",
+  "San Francisco",
+  "Minneapolis",
+  "Detroit",
+  "Baltimore",
+];
+
+const routes = [
+  "Dallas To Los Angeles",
+  "Portland To Palm Springs",
+  "Honolulu To Las Vegas",
+  "Fort Lauderdale To Aguadilla",
+  "San Jose To Las Vegas",
+  "Atlanta To Miami",
+  "New York City To London",
+  "Las Vegas To Dallas",
+  "Oakland To Los Angeles",
+  "Portland To Las Vegas ",
+  "El Paso To Ontario",
+  "Newark To Las Vegas",
+];
+
+const quickLinks = [
+  { name: "Book Flights", to: "" },
+  { name: "Flight Status", to: "" },
+  { name: "Flight Deals", to: "" },
+  { name: "Manage Booking", to: "" },
+  { name: "Destination Guides", to: "" },
+  { name: "Travel Tips", to: "" },
+  { name: "Travel Blog", to: "" },
+  { name: "Best Price Guarantee", to: "" },
+  { name: "FAQ'S", to: "" },
+  { name: "First Class Flights", to: "" },
+  { name: "Business Class Flights", to: "" },
+  { name: "About Tripcanny", to: "../About" },
+  { name: "Privacy Policy", to: "./Privacy" },
+  { name: "Contact Us", to: "./Contact" },
+  { name: "Refund Policy", to: "./Refund" },
+  { name: "Disclaimer", to: "./Disclaimer" },
 ];
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <>
       <footer className="flex flex-col items-center">
         <div className="text-white w-[80%] py-[2rem] flex flex-col gap-[1rem]">
           <h1 className="font-bold opacity-50 text-2xl">Disclaimer :</h1>
           <div className="">
-            Please note that FarePerfect operates as an independent travel agency. Our extremely reduced offers are
+            Please note that Tripcanny operates as an independent travel agency. Our extremely reduced offers are
             non-refundable and come with restrictions on date and routing changes after ticketing and before travel.
             Savings may vary without prior notice, and additional limitations may apply. By using our service, customers
-            explicitly agree that they do so at their sole risk. FarePerfect, its affiliates, and their respective
+            explicitly agree that they do so at their sole risk. Tripcanny, its affiliates, and their respective
             employees, agents, third-party content providers, or licensors do not warrant that our service will be
             uninterrupted or error-free. Nor do they make any warranties regarding the results that may be obtained from
             using our service or the accuracy, reliability, or content of any information, service, or inventory
-            provided through FarePerfect.
+            provided through Tripcanny.
           </div>
         </div>
         <div className="w-[80%] border-t">
-          <div className="mx-auto grid w-full grid-cols-1 text-white gap-8 py-12 md:grid-cols-2 lg:grid-cols-4">
-            {SITEMAP.map(({ title, links }, key) => (
-              <div key={key} className="w-full">
-                <Typography
-                  variant="small"
-                  color="blue-gray"
-                  className="mb-4 font-bold md:text-2xl text-1xl uppercase opacity-50"
-                  placeholder={undefined}
-                >
-                  {title}
-                </Typography>
-                <ul className="space-y-1">
-                  {links.map((link, key) => (
-                    <Typography key={key} as="li" className="font-normal" placeholder={undefined}>
-                      <Link to={`${link === "Privacy Policy" ? "/Privacy" : ""}`}>{link}</Link>
-                    </Typography>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-          <div className="text-white py-[2rem] flex flex-col gap-[1rem] border-t">
+          <div className="text-white py-[2rem] flex flex-col gap-[1rem]">
             <h1 className="font-bold opacity-50 text-2xl">Top Airlines :</h1>
             <div className="grid grid-cols-2 md:grid-cols-4">
               {airlines.map((data, index) => (
+                <li
+                  key={data}
+                  onClick={() => navigate(`/flight/${data}`, { state: { type: "airlines" } })}
+                  className="cursor-pointer hover:translate-x-0.5 transition"
+                >
+                  {data}
+                </li>
+              ))}
+            </div>
+          </div>
+
+          <div className="text-white py-[2rem] flex flex-col gap-[1rem] border-t">
+            <h1 className="font-bold opacity-50 text-2xl">Top Destinations :</h1>
+            <div className="grid grid-cols-2 md:grid-cols-4">
+              {destinations.map((data, index) => (
+                <li
+                  key={data}
+                  onClick={() => navigate(`/destination/${data}`, { state: { type: "place" } })}
+                  className="cursor-pointer hover:translate-x-0.5 transition"
+                >
+                  {data}
+                </li>
+              ))}
+            </div>
+          </div>
+
+          <div className="text-white py-[2rem] flex flex-col gap-[1rem] border-t">
+            <h1 className="font-bold opacity-50 text-2xl">Top Flight Routes :</h1>
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              {routes.map((data, index) => (
                 <li key={data} className="cursor-pointer hover:translate-x-0.5 transition">
                   {data}
                 </li>
               ))}
             </div>
           </div>
+
+          <div className="text-white py-[2rem] flex flex-col gap-[1rem] border-t">
+            <h1 className="font-bold opacity-50 text-2xl">Quick Links :</h1>
+            <div className="grid grid-cols-2 md:grid-cols-4">
+              {quickLinks.map((data, index) => (
+                <Link key={data.name} to={data.to} className="cursor-pointer hover:translate-x-0.5 transition">
+                  {data.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+
           <div className="flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4  ">
             <div className="flex gap-4 text-blue-gray-900 sm:justify-center text-white">
               <Typography
@@ -162,8 +233,8 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div className="h-[5rem] bg-yellow-500 text-black-400 text-small md:text-large font-extralight flex flex-col items-center justify-center px-[2rem] ">
-        © 2024 Fairperfect • All Rights Reserved • Designed By TMIS with 🖤
+      <div className="h-[5rem] bg-white text-black-400 text-small text-black md:text-large font-normal flex flex-col items-center justify-center px-[2rem] ">
+        © 2024 FarePerfect • All Rights Reserved • Designed By TMIS with 🖤
       </div>
     </>
   );

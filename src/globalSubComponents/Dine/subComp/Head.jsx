@@ -12,7 +12,7 @@ const Head = () => {
         </div>
         <div className="py-[1rem]">
           <h1 className="font-serif font-bold md:text-5xl text-3xl text-center ">
-            FarePerfect <span className="text-yellow-400">Premium </span>Select
+            FarePerfect <span className="text-[#0a97b0]">Premium </span>Select
           </h1>
         </div>
       </div>
