@@ -1,30 +1,35 @@
 {
   "files": {
-    "main.css": "/static/css/main.d2472bd4.css",
-    "main.js": "/static/js/main.9c9e0655.js",
+    "main.css": "/static/css/main.7df86cb0.css",
+    "main.js": "/static/js/main.79d284b8.js",
+    "static/media/medium-shot-smiley-people-traveling.jpg": "/static/media/medium-shot-smiley-people-traveling.8f5972505b2f888faee0.jpg",
     "static/media/malasia.jpg": "/static/media/malasia.7b64a75dd9b2eef9cd12.jpg",
     "static/media/maldives.jpg": "/static/media/maldives.4f2c7832c01728982b64.jpg",
+    "static/media/fli.jpg": "/static/media/fli.0b1bcd99df059a7f803c.jpg",
     "static/media/bali.jpg": "/static/media/bali.ddc0c830b3daafaeed3b.jpg",
-    "static/media/random.jpg": "/static/media/random.91eebe510669d2ab7d8a.jpg",
+    "static/media/si.jpg": "/static/media/si.c6f48347d72d7ef98fb4.jpg",
+    "static/media/test.jpg": "/static/media/test.4f57cf410b23ea542665.jpg",
+    "static/media/business.jpg": "/static/media/business.e86e528e7cb059fda161.jpg",
     "static/media/paris.jpg": "/static/media/paris.c3d9504e667cf4698686.jpg",
-    "static/media/2151205393.jpg": "/static/media/2151205393.a399e26c139ea4ab0d49.jpg",
-    "static/media/lug.jpg": "/static/media/lug.e066fbe8f3b06dfcb2dd.jpg",
-    "static/media/bag (1).jpg": "/static/media/bag (1).e3cbf9f6b8b1e0773ebf.jpg",
+    "static/media/lin.jpg": "/static/media/lin.f70f294a6adb366f0934.jpg",
+    "static/media/se.jpg": "/static/media/se.296d4adb2df34e9bf95d.jpg",
     "static/media/travelContact.jpg": "/static/media/travelContact.7408ab5402f2001f3df7.jpg",
+    "static/media/bookingBg.jpg": "/static/media/bookingBg.08ac4fbf43266dfb0bc2.jpg",
     "static/media/lastMinute.jpg": "/static/media/lastMinute.211564788bfc70a13d1e.jpg",
     "static/media/dubai.jpg": "/static/media/dubai.79b679e7b677979cefba.jpg",
-    "static/media/cus.jpg": "/static/media/cus.b5c754f9d3579423b8a3.jpg",
-    "static/media/logo.svg": "/static/media/logo.7ab523de946482b90dd0e496f3054e7f.svg",
+    "static/media/airport-2373727_1280.jpg": "/static/media/airport-2373727_1280.92d4ad5b521b1916de99.jpg",
+    "static/media/indoor-2594469_1280.jpg": "/static/media/indoor-2594469_1280.6b515aa3edf06d39ee5d.jpg",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/logo.svg": "/static/media/logo.59e010df4189e8066105e1b9db6fef7b.svg",
     "index.html": "/index.html",
-    "main.d2472bd4.css.map": "/static/css/main.d2472bd4.css.map",
-    "main.9c9e0655.js.map": "/static/js/main.9c9e0655.js.map"
+    "main.7df86cb0.css.map": "/static/css/main.7df86cb0.css.map",
+    "main.79d284b8.js.map": "/static/js/main.79d284b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2472bd4.css",
-    "static/js/main.9c9e0655.js"
+    "static/css/main.7df86cb0.css",
+    "static/js/main.79d284b8.js"
   ]
 }
