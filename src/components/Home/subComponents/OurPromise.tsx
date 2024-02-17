@@ -61,7 +61,7 @@ const OurPromise = () => {
       {/* <Image src="" alt="benifit image" className="h-auto w-[130rem]" radius="none" /> */}
       <div className="flex flex-col gap-y-[5rem] items-center px-[2rem] py-[4rem]">
         <h1 className="text-center text-4xl sm:text-5xl text-black font-bold ">
-          OUR <span className="text-[#0a97b0]">BENIFITS</span>
+          OUR <span className="text-[#0a97b0]">BENEFITS</span>
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-[2rem] lg:gap-y-[4rem] gap-x-[1rem] justify-center items-start">
           {servicesData.map((service, index) => (
