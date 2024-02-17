@@ -13,7 +13,7 @@ const BookAFlight = () => {
           <div className="text-2xl text-black mt-3 ">Relive your dream vacation with FarePerfect.</div>
         </div>
 
-        <Button className="text-2xl font-bold font-serif bg-black border text-white self-center p-[2rem]" radius="full">
+        <Button className="text-2xl font-bold bg-black border text-white self-center p-[2rem]" radius="full">
           Book Flight
         </Button>
       </div>

@@ -17,19 +17,17 @@ const RegionFlights = () => {
   const location = useLocation();
   const params = useParams();
 
-   
-   const contentType = location.state.type;
-   const name = params.place;
+  const contentType = location.state.type;
+  const name = params.place;
 
-   console.log(params)
+  console.log(params);
 
-   if (contentType === "place") {
-     details = record.filter((filterData) => filterData.place === name);
-   }
+  if (contentType === "place") {
+    details = record.filter((filterData) => filterData.place === name);
+  }
 
-  console.log("hhhhhhh",details)
+  console.log("hhhhhhh", details);
 
-  
   return (
     <>
       <Hero title={name} />
@@ -38,12 +36,12 @@ const RegionFlights = () => {
           <div className="flex flex-col justify-center items-start md:p-[4rem] p-[1rem] bg-white h-auto">
             <div className="p-[2rem]">
               <div className="py-[1rem]">
-                <h1 className="text-3xl font-bold font-serif ">
+                <h1 className="text-3xl font-bold  ">
                   {e?.heading1} <span className="text-[#0a97b0]">FarePerfect</span>
                 </h1>
               </div>
               <div>
-                <p className="text-1xl font-serif font-normal text-gray-600">{e?.des1}</p>
+                <p className="text-1xl  font-normal text-gray-600">{e?.des1}</p>
               </div>
             </div>
 
@@ -51,29 +49,23 @@ const RegionFlights = () => {
               e?.airline.map((data) => (
                 <div className="p-[2rem] border-2">
                   <div className="py-[1rem]">
-                    <h1 className="text-3xl font-bold font-serif text-[#0a97b0] ">{data?.titlemain}</h1>
+                    <h1 className="text-3xl font-bold  text-[#0a97b0] ">{data?.titlemain}</h1>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold font-serif py-[0.5rem]">
-                      {data?.description.map((head) => head?.name1)}
-                    </h3>
-                    <p className="text-1xl font-serif font-normal text-gray-600">
+                    <h3 className="text-2xl font-bold  py-[0.5rem]">{data?.description.map((head) => head?.name1)}</h3>
+                    <p className="text-1xl  font-normal text-gray-600">
                       {data?.description.map((head) => head?.about1)}
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold font-serif py-[0.5rem]">
-                      {data?.description.map((head) => head?.name2)}
-                    </h3>
-                    <p className="text-1xl font-serif font-normal text-gray-600">
+                    <h3 className="text-2xl font-bold  py-[0.5rem]">{data?.description.map((head) => head?.name2)}</h3>
+                    <p className="text-1xl  font-normal text-gray-600">
                       {data?.description.map((head) => head?.about2)}
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold font-serif py-[0.5rem]">
-                      {data?.description.map((head) => head?.name3)}
-                    </h3>
-                    <p className="text-1xl font-serif font-normal text-gray-600">
+                    <h3 className="text-2xl font-bold  py-[0.5rem]">{data?.description.map((head) => head?.name3)}</h3>
+                    <p className="text-1xl  font-normal text-gray-600">
                       {data?.description.map((head) => head?.about3)}
                     </p>
                   </div>
@@ -84,66 +76,46 @@ const RegionFlights = () => {
               e?.faqquestion.map((data) => (
                 <div className="p-[2rem] ">
                   <div className="py-[1rem]">
-                    <h1 className="text-3xl font-bold font-serif text-[#0a97b0] ">{data?.title2}</h1>
+                    <h1 className="text-3xl font-bold  text-[#0a97b0] ">{data?.title2}</h1>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold font-serif py-[0.5rem]">
-                      {data?.query.map((filter) => filter?.query1)}
-                    </h3>
-                    <p className="text-1xl font-serif font-normal text-gray-600">
-                      {data?.query.map((filter) => filter?.ans1)}
-                    </p>
+                    <h3 className="text-2xl font-bold  py-[0.5rem]">{data?.query.map((filter) => filter?.query1)}</h3>
+                    <p className="text-1xl  font-normal text-gray-600">{data?.query.map((filter) => filter?.ans1)}</p>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold font-serif py-[0.5rem]">
-                      {data?.query.map((filter) => filter?.query2)}
-                    </h3>
-                    <p className="text-1xl font-serif font-normal text-gray-600">
-                      {data?.query.map((filter) => filter?.ans2)}
-                    </p>
+                    <h3 className="text-2xl font-bold  py-[0.5rem]">{data?.query.map((filter) => filter?.query2)}</h3>
+                    <p className="text-1xl  font-normal text-gray-600">{data?.query.map((filter) => filter?.ans2)}</p>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold font-serif py-[0.5rem]">
-                      {data?.query.map((filter) => filter?.query3)}
-                    </h3>
-                    <p className="text-1xl font-serif font-normal text-gray-600">
-                      {data?.query.map((filter) => filter?.ans3)}
-                    </p>
+                    <h3 className="text-2xl font-bold  py-[0.5rem]">{data?.query.map((filter) => filter?.query3)}</h3>
+                    <p className="text-1xl  font-normal text-gray-600">{data?.query.map((filter) => filter?.ans3)}</p>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold font-serif py-[0.5rem]">
-                      {data?.query.map((filter) => filter?.query4)}
-                    </h3>
-                    <p className="text-1xl font-serif font-normal text-gray-600">
-                      {data?.query.map((filter) => filter?.ans4)}
-                    </p>
+                    <h3 className="text-2xl font-bold  py-[0.5rem]">{data?.query.map((filter) => filter?.query4)}</h3>
+                    <p className="text-1xl  font-normal text-gray-600">{data?.query.map((filter) => filter?.ans4)}</p>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold font-serif py-[0.5rem]">
-                      {data?.query.map((filter) => filter?.query5)}
-                    </h3>
-                    <p className="text-1xl font-serif font-normal text-gray-600">
-                      {data?.query.map((filter) => filter?.ans5)}
-                    </p>
+                    <h3 className="text-2xl font-bold  py-[0.5rem]">{data?.query.map((filter) => filter?.query5)}</h3>
+                    <p className="text-1xl  font-normal text-gray-600">{data?.query.map((filter) => filter?.ans5)}</p>
                   </div>
                 </div>
               ))}
 
             <div className="p-[2rem]">
               <div className="py-[1rem]">
-                <h1 className="text-3xl font-bold font-serif ">{e?.reach}</h1>
+                <h1 className="text-3xl font-bold  ">{e?.reach}</h1>
               </div>
               <div>
-                <p className="text-1xl font-serif font-normal text-gray-600">{e?.answer}</p>
+                <p className="text-1xl  font-normal text-gray-600">{e?.answer}</p>
               </div>
             </div>
 
             <div className="flex flex-col items-start justify-center px-[2rem]  ">
-              <h2 className="text-3xl font-serif font-bold ">
+              <h2 className="text-3xl  font-bold ">
                 Why Book with <span className="text-[#0a97b0]">FarePerfect</span>
               </h2>
               <div>
-                <ul className="list-disc text-1xl text-gray-600 font-serif font-normal px-[2rem] py-[1rem]">
+                <ul className="list-disc text-1xl text-gray-600  font-normal px-[2rem] py-[1rem]">
                   <li>Best Prices GUARANTEED</li>
                   <li>Fast, Easy & Secure Reservations</li>
                   <li>24/7 Booking Assistance</li>
@@ -154,11 +126,11 @@ const RegionFlights = () => {
             </div>
 
             <div className="flex flex-col items-start justify-center px-[2rem] ">
-              <h2 className="text-3xl font-serif font-bold ">
+              <h2 className="text-3xl  font-bold ">
                 In-Flight Amenities <span className="text-[#0a97b0]">Amenities</span>
               </h2>
               <div>
-                <ul className="list-disc text-1xl text-gray-600 font-serif font-normal px-[2rem] py-[1rem]">
+                <ul className="list-disc text-1xl text-gray-600  font-normal px-[2rem] py-[1rem]">
                   <li>
                     Domestic aircraft’s have a provision of seat-back entertainment systems with a wide range of music,
                     TV and movies to choose from
@@ -196,11 +168,11 @@ const RegionFlights = () => {
             </div>
 
             <div className="flex flex-col items-start justify-center px-[2rem]">
-              <h2 className="text-3xl font-serif font-bold  ">
+              <h2 className="text-3xl  font-bold  ">
                 Make Your Travel Easier With <span className="text-[#0a97b0]">FarePerfect</span>
               </h2>
               <div>
-                <ul className="list-disc text-1xl text-gray-600 font-serif font-normal px-[2rem] py-[1rem]">
+                <ul className="list-disc text-1xl text-gray-600  font-normal px-[2rem] py-[1rem]">
                   <li>Track & manage your itineraries</li>
                   <li>Get access to App only exclusive fares</li>
                   <li>Receive special Promo Codes & Discount</li>

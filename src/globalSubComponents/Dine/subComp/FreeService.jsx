@@ -11,7 +11,7 @@ const FreeService = () => {
         />
       </div>
       <div className="py-[2rem]">
-        <h2 className="font-bold font-serif text-1xl py-[1rem]">
+        <h2 className="font-bold  text-1xl py-[1rem]">
           AT THE <span className="text-[#0a97b0]">AIRPORT</span>
         </h2>
         <p className="text-gray-600">

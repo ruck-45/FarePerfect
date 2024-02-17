@@ -15,7 +15,7 @@ const AllProduct = (props:cardsProps) => {
     <div className='w-auto h-auto  p-[2rem]  hover:scale-110 transition duration-900 ease-in-out'>
         <img className='w-[25rem] h[25rem]' src={props.photo} />
     </div>
-    <div className='text-center text-2xl font-bold font-serif py-[1rem]  hover:text-blue-700'>
+    <div className='text-center text-2xl font-bold  py-[1rem]  hover:text-blue-700'>
         <h2>
           <Link to='/'>{props.des}</Link>
         </h2>

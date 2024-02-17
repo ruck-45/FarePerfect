@@ -5,7 +5,7 @@ const OurServices = () => {
     <>
       <div className="bg-white flex flex-col items-center justify-center py-[1rem] gap-[2rem] pt-[5rem]">
         <div className="flex flex-col items-center">
-          <h1 className="text-center text-4xl sm:text-5xl text-black font-bold font-serif">
+          <h1 className="text-center text-4xl sm:text-5xl text-black font-bold ">
             <span className="text-[#0a97b0]">OUR</span> SERVICES
           </h1>
           <div className="md:h-[0.3rem] h-1 bg-[#0a97b0] w-20 md:w-40 text-white"></div>

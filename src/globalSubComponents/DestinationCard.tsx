@@ -8,7 +8,6 @@ import malasia from "../globalAssets/images/malasia.jpg";
 import bali from "../globalAssets/images/bali.jpg";
 import paris from "../globalAssets/images/paris.jpg";
 
-
 const content = [
   {
     place: "DUBAI",
@@ -120,10 +119,10 @@ const DestinationCard = () => {
 
   return (
     <div className="flex flex-col py-[3rem] md:py-[5rem] bg-white h-[40rem]">
-      <h1 className="text-5xl font-bold font-serif text-black text-center">
+      <h1 className="text-5xl font-bold  text-black text-center">
         Popular <span className="text-[#0a97b0]">Destinations</span>
       </h1>
-      <h2 className="text-center font-bold font-serif text-black py-[1.5rem]">
+      <h2 className="text-center font-bold  text-black py-[1.5rem]">
         Enjoy Your <span className="text-[#0a97b0]">Destination</span>{" "}
       </h2>
       <div className="slider-container">
