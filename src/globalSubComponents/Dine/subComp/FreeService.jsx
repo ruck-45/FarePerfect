@@ -6,13 +6,13 @@ const FreeService = () => {
       <div className="px-[2rem] w-[38rem] h-auto md:block hidden ">
         <img
           className="w-[35rem]  "
-          src="https://img.freepik.com/premium-photo/vibrant-image-capturing-essence-travel-vacation_818261-9852.jpg?size=626&ext=jpg&uid=R135143294&ga=GA1.1.605707501.1697708835&semt=ais_ai_generated"
+          src="https://img.freepik.com/free-photo/view-3d-airplane-with-wings-engine_23-2151022210.jpg?size=626&ext=jpg&uid=R135143294&ga=GA1.1.605707501.1697708835&semt=ais_ai_generated"
           alt=""
         />
       </div>
       <div className="py-[2rem]">
-        <h2 className="font-bold font-serif text-1xl py-[1rem]">
-          AT THE <span className="text-yellow-600">AIRPORT</span>
+        <h2 className="font-bold  text-1xl py-[1rem]">
+          AT THE <span className="text-[#0a97b0]">AIRPORT</span>
         </h2>
         <p className="text-gray-600">
           Access to separate check-in counters or expedited check-in processes to <br /> minimize wait times.Entry to

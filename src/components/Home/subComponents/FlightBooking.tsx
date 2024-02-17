@@ -7,7 +7,7 @@ import { IoPeople, IoSend } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
-
+import "./Flight.css";
 const flightClass = [
   {
     name: "Economy",
@@ -31,11 +31,12 @@ const FlightBooking = () => {
   const [roundTrip, setRoundTrip] = useState(false);
 
   return (
-    <div className="bg-white relative flex justify-center py-[1rem]">
-      <div className="w-[100%] sm:w-[80%] p-[3rem] bg-white rounded-xl md:drop-shadow-xl relative md:top-[-7rem] flex flex-col gap-[2rem]">
+    <div className="flex flex-col justify-center items-center py-[5rem] ">
+      <h1 className="text-5xl font-bold text-white text-center">Book Flights</h1>
+      <h2 className="text-center font-bold  text-white py-[1.5rem]">Plan Your Next Trip</h2>
+      <div className="w-[100%] sm:w-[80%] p-[3rem] bg-white rounded-xl md:drop-shadow-xl border-2 flex flex-col gap-[2rem]">
         <RadioGroup
           orientation="horizontal"
-          color="danger"
           defaultValue="one-way"
           classNames={{
             wrapper: "gap-[2rem]",
@@ -48,10 +49,22 @@ const FlightBooking = () => {
         <form action="" className="flex flex-col gap-[1rem]">
           <p className="text-default-500">Departure</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-[2rem]">
-            <Input type="text" label="From" startContent={<MdFlightTakeoff />} />
-            <Input type="text" label="to" startContent={<MdFlightLand />} />
-            <Input type="date" label="date" startContent={<BsFillCalendarDateFill />} />
-            <Select label="Class" defaultSelectedKeys={["economy"]} className="max-w-xs">
+            <Input type="text" label="From" variant="underlined" color="primary" startContent={<MdFlightTakeoff />} />
+            <Input type="text" label="to" variant="underlined" color="primary" startContent={<MdFlightLand />} />
+            <Input
+              type="date"
+              label="date"
+              variant="underlined"
+              color="primary"
+              startContent={<BsFillCalendarDateFill />}
+            />
+            <Select
+              label="Class"
+              variant="underlined"
+              color="primary"
+              defaultSelectedKeys={["economy"]}
+              className="max-w-xs"
+            >
               {flightClass.map((data) => (
                 <SelectItem value={data.value} key={data.value}>
                   {data.name}
@@ -59,15 +72,32 @@ const FlightBooking = () => {
               ))}
             </Select>
           </div>
-          <Divider className="mt-[1rem]" />
           {roundTrip ? (
             <>
               <p className="text-default-500">Arrival</p>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-[2rem]">
-                <Input type="text" label="From" startContent={<MdFlightTakeoff />} />
-                <Input type="text" label="to" startContent={<MdFlightLand />} />
-                <Input type="date" label="date" startContent={<BsFillCalendarDateFill />} />
-                <Select label="Class" defaultSelectedKeys={["economy"]} className="max-w-xs">
+                <Input
+                  type="text"
+                  label="From"
+                  variant="underlined"
+                  color="primary"
+                  startContent={<MdFlightTakeoff />}
+                />
+                <Input type="text" label="to" variant="underlined" color="primary" startContent={<MdFlightLand />} />
+                <Input
+                  type="date"
+                  label="date"
+                  variant="underlined"
+                  color="primary"
+                  startContent={<BsFillCalendarDateFill />}
+                />
+                <Select
+                  label="Class"
+                  defaultSelectedKeys={["economy"]}
+                  color="primary"
+                  variant="underlined"
+                  className="max-w-xs"
+                >
                   {flightClass.map((data) => (
                     <SelectItem value={data.value} key={data.value}>
                       {data.name}
@@ -75,21 +105,27 @@ const FlightBooking = () => {
                   ))}
                 </Select>
               </div>
-              <Divider className="mt-[1rem]" />
             </>
           ) : null}
           <p className="text-default-500">Personal Information</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-[2rem]">
-            <Input type="number" label="Passengers" defaultValue="1" startContent={<IoPeople />} />
-            <Input type="text" label="Name" startContent={<CgProfile />} />
-            <Input type="email" label="Email" startContent={<MdEmail />} />
-            <Input type="phone" label="Phone" startContent={<FaPhone />} />
+            <Input
+              type="number"
+              label="Passengers"
+              defaultValue="1"
+              variant="underlined"
+              color="primary"
+              startContent={<IoPeople />}
+            />
+            <Input type="text" label="Name" variant="underlined" color="primary" startContent={<CgProfile />} />
+            <Input type="email" label="Email" variant="underlined" color="primary" startContent={<MdEmail />} />
+            <Input type="phone" label="Phone" variant="underlined" color="primary" startContent={<FaPhone />} />
           </div>
           <Button
-            color="warning"
             variant="shadow"
             type="submit"
-            className="text-white self-center mt-[2rem]"
+            className="text-white bg-[#0a97b0] self-center mt-[2rem]"
+            radius="none"
             endContent={<IoSend className="mt-[0.2rem]" />}
           >
             Submit

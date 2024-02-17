@@ -5,9 +5,9 @@ import { RiServiceFill } from "react-icons/ri";
 import { BiWorld } from "react-icons/bi";
 import { BiSupport } from "react-icons/bi";
 import { IoShieldCheckmarkSharp } from "react-icons/io5";
-
+import benifits from "../assets/benifitsOur.png";
 // Local Files
-import Card from "../../../globalSubComponents/Card";
+import { Card, CardHeader, CardBody, Divider, Image } from "@nextui-org/react";
 
 // Define your data as a JSON object
 const servicesData = [
@@ -51,17 +51,42 @@ const servicesData = [
 
 const OurPromise = () => {
   return (
-    <div className="bg-white w-full">
-      <div className="flex flex-col items-center py-[3rem]">
-        <h1 className="text-center text-4xl sm:text-5xl text-black font-bold font-serif">
-          <span className="text-yellow-400">OUR</span> PROMISE
+    <div className="flex bg-[#f8f9fa] overflow-hidden">
+      <div
+        className="hidden lg:flex  bg-no-repeat bg-center bg-cover w-[90rem] h-auto"
+        style={{
+          backgroundImage: `url("https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
+        }}
+      ></div>
+      {/* <Image src="" alt="benifit image" className="h-auto w-[130rem]" radius="none" /> */}
+      <div className="flex flex-col gap-y-[5rem] items-center px-[2rem] py-[4rem]">
+        <h1 className="text-center text-4xl sm:text-5xl text-black font-bold ">
+          OUR <span className="text-[#0a97b0]">BENIFITS</span>
         </h1>
-        <div className="md:h-[0.3rem] h-1 bg-black w-20 md:w-40 text-white"></div>
-      </div>
-      <div className="bg-white h-full text-black md:mx-[8rem] mx-[2rem] rounded-sm">
-        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-6 justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-[2rem] lg:gap-y-[4rem] gap-x-[1rem] justify-center items-start">
           {servicesData.map((service, index) => (
-            <Card key={index} photo={service.photo} title={service.title} des={service.description} />
+            <>
+              <div className="hidden lg:flex flex-col gap-2">
+                <div className="flex flex-row gap-x-4">
+                  <service.photo size={25} className="text-[#0a97b0]" />
+                  <h1 className="font-semibold text-xl lg:text-[1rem]">{service.title}</h1>
+                </div>
+                <Divider className="bg-[#0a97b0]" />
+                <p>{service.description}</p>
+              </div>
+              <Card className="lg:hidden h-[15rem] p-4 hover:scale-105">
+                <CardHeader className="flex gap-3">
+                  <service.photo size={30} className="text-[#0a97b0]" />
+                  <div className="flex flex-col">
+                    <p className="text-xl font-semibold">{service.title}</p>
+                  </div>
+                </CardHeader>
+                <Divider className="bg-[#0a97b0]" />
+                <CardBody>
+                  <p>{service.description}</p>
+                </CardBody>
+              </Card>
+            </>
           ))}
         </div>
       </div>

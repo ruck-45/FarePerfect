@@ -43,50 +43,50 @@ const NavBar = () => {
         onMenuOpenChange={() => {
           dispatch(updateNavStatus(!navOpenStatus));
         }}
-        className="h-[3rem] py-[1.2rem] nav z-[200] bg-yellow-400 justify-center hidden lg:flex"
+        className="h-[2rem] py-[1.2rem] nav z-[200] bg-[#0a97b0] justify-center hidden lg:flex"
         maxWidth="xl"
         isBordered
       >
         <NavbarContent className="hidden lg:flex" justify="center">
           <NavbarItem>
             <div className="flex flex-row gap-2">
-              <MdEmail className="text-black" size={22} />
-              <span className="text-white text-md">Email : support@fareperfect.com</span>
+              <MdEmail className="text-black mt-[0.1rem]" size={20} />
+              <span className="text-white  text-[1rem]">Email : support@fareperfect.com</span>
             </div>
           </NavbarItem>
           <Divider orientation="vertical" className="h-6" />
           <NavbarItem>
             <div className="flex flex-row gap-2">
-              <FaPhone className="text-black" size={20} />
-              <span className="text-white text-md">Call Now : +1 (844) 671-7473</span>
+              <FaPhone className="text-black mt-[0.1rem]" size={18} />
+              <span className="text-white text-[1rem]">Call Now : +1 (844) 671-7473</span>
             </div>
           </NavbarItem>
         </NavbarContent>
         <NavbarContent className="hidden lg:flex" justify="center">
           <div className="flex flex-row gap-x-4 cursor-pointer">
-            <FaInstagram size={23} className="text-black" />
-            <FaSquareFacebook size={23} className="text-black" />
-            <FaLinkedin size={23} className="text-black" />
-            <FaTwitter size={23} className="text-black" />
+            <FaInstagram size={23} className="text-white" />
+            <FaSquareFacebook size={23} className="text-white" />
+            <FaLinkedin size={23} className="text-white" />
+            <FaTwitter size={23} className="text-white" />
           </div>
         </NavbarContent>
       </Navbar>
       <Navbar
         isMenuOpen={navOpenStatus}
         onMenuOpenChange={setIsMenuOpen}
-        className=" bg-white z-[200] h-[8rem] nav"
+        className=" bg-white md:z-[200] h-[5rem] nav"
         maxWidth="xl"
         isBordered
       >
         <NavbarContent>
           <NavbarMenuToggle aria-label={navOpenStatus ? "Close menu" : "Open menu"} className="lg:hidden text-black" />
           <Link to="../Home">
-            <Image width={120} src={logo} alt="logo" radius="none" className="hidden lg:block" />
+            <Image width={90} src={logo} alt="logo" radius="none" className="hidden lg:block" />
           </Link>
         </NavbarContent>
-        <NavbarContent className="lg:hidden logo">
+        <NavbarContent className="lg:hidden logo mr-[30%]">
           <Link to="../Home">
-            <Image width={120} src={logo} alt="logo" radius="none" />
+            <Image width={90} src={logo} alt="logo" radius="none" />
           </Link>
         </NavbarContent>
 
@@ -117,33 +117,23 @@ const NavBar = () => {
           </NavbarItem>
           <NavbarItem>
             <Link
-              to="../LastMinuteFlights"
-              className={
-                curTab === "Last Minute Flights" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"
-              }
-            >
-              Last Minute
-            </Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link
               to="../Privacy"
               className={curTab === "Privacy" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
             >
               Privacy
             </Link>
           </NavbarItem>
-        </NavbarContent>
-        <NavbarContent justify="end">
           <NavbarItem className="hidden lg:flex">
             <a className="flex gap-[1rem]" href="tel:+1 (844) 671-7473">
-              <Button isIconOnly variant="solid" color="warning" className="w-[3rem] h-[3rem] text-[1.5rem]">
-                <FaPhone />
+              <Button
+                startContent={<FaPhone />}
+                variant="solid"
+                color="warning"
+                className="text-white hover:scale-110 bg-[#0a97b0]"
+                radius="none"
+              >
+                Call Us
               </Button>
-              <div>
-                <p>Call us for Lowest Airfares</p>
-                <p>+1 (844) 671-7473</p>
-              </div>
             </a>
           </NavbarItem>
         </NavbarContent>

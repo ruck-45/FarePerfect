@@ -4,8 +4,8 @@ const Dinner = () => {
   return (
     <div className=" flex flex-row items-center justify-center gap-5 md:px-[5rem] px-[2rem] py-[rem] h-auto w-auto  ">
       <div className="py-[1rem]">
-        <h2 className="font-bold font-serif text-1xl py-[1rem]">
-          FINE <span className="text-yellow-600">DINING</span> SERVICE
+        <h2 className="font-bold  text-1xl py-[1rem]">
+          FINE <span className="text-[#0a97b0]">DINING</span> SERVICE
         </h2>
         <p className="text-gray-600">
           In-flight dining service on airplanes typically involves meals and <br /> beverages served to passengers

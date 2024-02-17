@@ -20,10 +20,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.3)),
-    url("https://images.unsplash.com/photo-1606768666853-403c90a981ad?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    url("https://img.freepik.com/free-photo/flying-commercial-airplane-taking-off-sunset-with-dramatic-sky-generated-by-ai_188544-55990.jpg?t=st=1708172102~exp=1708175702~hmac=9482d0d6a31d2e7e6a581ff46b9612f1894f78105df267120cb55c7d7ad61e4d&w=826");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   overflow-x: hidden;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }

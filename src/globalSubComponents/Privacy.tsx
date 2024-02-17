@@ -11,10 +11,9 @@ export const Privacy = () => {
   });
   return (
     <>
-      <Intro des="Privacy" />
+      <Intro des="Privacy & Policy" />
       <div className="flex flex-col bg-white md:py-[2rem] md:px-[4rem] px-[0.7rem] items-center gap-3">
         <div className="h-auto w-full p-4 text-start rounded-md flex flex-col gap-3 md:p-[5rem]">
-          <h1 className="text-3xl font-bold text-center">Privacy Policy</h1>
           <p>
             Welcome to FarePerfect. This privacy statement outlines the terms and conditions governing your use of our
             website. Please carefully review this privacy policy as it pertains to all aspects of your travel
