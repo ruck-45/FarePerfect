@@ -3,7 +3,67 @@ import { updateTab } from "../store/curTabSlice";
 import Intro from "./Intro";
 import Subscribe from "./Subscribe";
 import "./LastMin.css";
-const title = { des: "Last Minute Flights" };
+const title = { des: "Refund Policy" };
+
+const refund = [
+  {
+    heading: "Cancellation Period : ",
+    content: [
+      "Customers are eligible for a full refund if they cancel their booking within 24 to 48 hours of making the reservation, depending on the specific service or booking.",
+      "The cancellation period may vary for different types of bookings, such as flights, hotels, or vacation packages.",
+      "Refunds requested after the cancellation period may be subject to penalties or fees as outlined in the booking terms and conditions.",
+    ],
+  },
+  {
+    heading: "Refund Eligibility : ",
+    content: [
+      "Refunds are granted based on the terms and conditions associated with the specific booking.",
+      "Customers must meet the eligibility criteria outlined in the booking terms to qualify for a refund.",
+      "Refund eligibility may depend on factors such as the reason for cancellation, the timing of the cancellation, and any applicable restrictions or penalties.",
+    ],
+  },
+  {
+    heading: "Processing Time : ",
+    content: [
+      "Refunds are typically processed within 7 to 14 business days after the cancellation request is approved.",
+      "The processing time may vary depending on factors such as the payment method used and the specific policies of the payment processor or financial institution.",
+      "Customers will receive notification once the refund has been processed, along with any relevant details such as the refund amount and expected timeline for receipt.",
+    ],
+  },
+  {
+    heading: "Partial Refunds : ",
+    content: [
+      "In some cases, customers may be eligible for a partial refund based on the services rendered or any applicable fees.",
+      "Partial refunds may be issued for unused portions of services or for cancellations made after the initial cancellation period.",
+      "The amount of the partial refund will be determined based on the specific terms and conditions of the booking and any applicable refund policies.",
+    ],
+  },
+  {
+    heading: "Exceptions : ",
+    content: [
+      "Certain bookings or services may have specific refund policies or restrictions that differ from the general policy.",
+      "Customers are advised to review the terms and conditions associated with their booking for any applicable exceptions or special considerations.",
+      "Exceptions may include non-refundable bookings, promotional offers, or special event bookings with unique cancellation policies.",
+    ],
+  },
+  {
+    heading: "Customer Support : ",
+    content: [
+      "Our customer support team is available to assist customers with refund inquiries and provide guidance throughout the refund process.",
+      "Customers can contact customer support via phone, email, or live chat for assistance with refund requests, questions about refund eligibility, or any other related concerns.",
+      "Our goal is to ensure that customers receive prompt and helpful assistance with their refund inquiries and that any issues or concerns are addressed in a timely manner.",
+    ],
+  },
+  {
+    heading: "Policy Updates : ",
+    content: [
+      "We reserve the right to update or modify our refund policy at any time.",
+      "Any changes to the refund policy will be communicated to customers through our website, email, or other appropriate channels.",
+      "Customers are encouraged to review the refund policy periodically for any updates or changes that may affect their bookings or refund eligibility.",
+    ],
+  },
+];
+
 
 const LastMinuteFlights = () => {
   const dispatch = useDispatch();
@@ -17,59 +77,29 @@ const LastMinuteFlights = () => {
   return (
     <>
       <Intro des={title.des} />
-      <div className="flex flex-col justify-start h-auto bg-white gap-2 gap-y-6 px-[1rem] md:px-[10rem] py-[3rem]">
-        <div className="h-[15rem] md:h-[30rem] rounded-3xl bg-no-repeat bg-cover bg-center flex flex-col p-[3rem] justify-between lastMin"></div>
-        <div className="flex flex-col gap-2">
-          <h1 className="text-xl font-bold">Last-Minute Flight Tickets Made Affordable</h1>
+      <div className="flex flex-col bg-white  md:px-[4rem] px-[0.7rem] items-center gap-3">
+        <div className="h-[15rem] md:h-[30rem] rounded-3xl flex flex-col mt-5 justify-between lastMin w-[90%]"></div>
+        <div className="h-auto w-full p-4 text-start rounded-md flex flex-col gap-3 md:px-[5rem]">
           <p>
-            We understand the unpredictable nature of last-minute travel plans, which is why FarePerfect is dedicated to
-            providing stress-free and budget-friendly booking solutions for spontaneous trips. Whether you're planning a
-            spontaneous domestic getaway, a short-haul adventure, or an impromptu international journey, rest assured,
-            FarePerfect has your back with our exclusive last-minute flight deals.
+            This Refund Policy outlines our guidelines and procedures regarding refunds for purchases made through our
+            Service. It informs you about your rights concerning refunds and how we handle refund requests. We aim to
+            ensure transparency and fairness in our refund processes. By engaging with our Service and making purchases,
+            you agree to abide by the terms outlined in this Refund Policy.
           </p>
-        </div>
-        <div className="flex flex-col gap-2">
-          <h1 className="text-xl font-bold">How to Find Last-Minute Cheap Flights with FarePerfect?</h1>
-          <p>
-            Step 1: Embrace Flexibility: Flexibility is key when it comes to securing last-minute flights at great
-            prices. Consider being open to flying late or opting for red-eye flights, which often come with more
-            affordable price tags compared to daytime options. While it may require sacrificing some sleep, the savings
-            can be well worth it
-          </p>
-          <p>
-            Step 2: Leverage Your Airline Miles: Don't underestimate the value of your accumulated airline miles. By
-            preserving your air miles for those spontaneous travel needs, you can enjoy significant savings on
-            last-minute flights. Whether it's a short domestic hop or an international journey, your airline miles can
-            serve as a valuable resource, making those impromptu trips more budget-friendly.
-          </p>
-          <p>
-            Step 3: Explore Multiple Destinations: Keeping an open mind about your destination can lead to exciting
-            opportunities and great deals. By considering multiple locations for your last-minute getaway, you increase
-            your chances of finding the perfect flight deal with FarePerfect. Whether you're in the mood for a beach
-            escape, a city adventure, or a mountain retreat, our extensive network of flights offers something for every
-            traveler.
-          </p>
-          <p>
-            Step 4: Opt for Budget-Friendly Airlines: When booking last-minute flights, consider flying with low-cost
-            carriers to maximize your savings. While budget airlines may offer fewer amenities compared to their
-            full-service counterparts, they often provide significantly cheaper ticket options. By prioritizing your
-            budget and flexibility, you can enjoy more affordable fares without sacrificing the quality of your travel
-            experience.
-          </p>
-        </div>
-        <div className="flex flex-col gap-2">
-          <h1 className="text-xl font-bold">How Late Can You Book a Flight?</h1>
-          <p>
-            While specific policies may vary among airlines, as a general rule, you can typically book a flight up to
-            two hours before the scheduled departure time. This flexibility allows travelers to make spontaneous
-            decisions and embark on last-minute adventures with ease. However, it's essential to note that availability
-            may be limited closer to the departure time, so quick decision-making is key when booking last-minute
-            flights.
-          </p>
-          <p>
-            Ready to embark on your spontaneous adventure? Explore our extensive range of last-minute flight deals at
-            FarePerfect and turn your travel dreams into reality without breaking the bank. With our user-friendly
-            booking platform and unbeatable prices, planning your next spontaneous getaway has never been easier.
+          {refund.map((data, index) => (
+            <div className="flex flex-col gap-[0.5rem]">
+              <h1 className="font-bold text-2xl ">{data.heading}</h1>
+              <ul>
+                {data.content.map((cont, ind) => (
+                  <li className="text-sm list-disc list-inside">{cont}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+          <p className="mt-[3rem]">
+            This detailed refund policy aims to provide customers with clear and comprehensive information regarding
+            refund processes, eligibility criteria, and other important considerations. If customers have any questions
+            or require further clarification, they are encouraged to contact our customer support team for assistance.
           </p>
         </div>
       </div>
