@@ -1,54 +1,40 @@
 //Dependicies
-import { MdDataExploration } from "react-icons/md";
-import { FaShieldAlt } from "react-icons/fa";
-import { LuBaggageClaim } from "react-icons/lu";
+import "./Whychoseus.css"
 
-const missionData = [
-  {
-    category: "Travel Protection",
-    icon: FaShieldAlt, // Replace with the actual icon source
-    details:
-      "Safeguard your travel plans, belongings, and well-being with our comprehensive travel protection services. ",
-  },
-  {
-    category: "Special Baggage Protection",
-    icon: LuBaggageClaim, // Replace with Actual width height photo
-    details:
-      "Our Special Baggage Protection to your trip because it will either find and return your delayed bags or give a refund.",
-  },
-  {
-    category: "Customer Support",
-    icon: MdDataExploration, // Replace with Actual width height photo
-    details: "Email at support@fareperfect.com. All your concerns would be addressed at the earliest.",
-  },
-];
+
+
 
 const WhyChooseUs = () => {
   return (
-    <div className="bg-yellow-400 h-auto w-full py-[3rem] flex flex-col gap-[2rem]">
-      <div className="flex flex-col items-center">
-        <h1 className="text-center text-4xl sm:text-5xl text-black font-bold font-serif">
-          <span className="text-white">WHY</span> CHOOSE US
-        </h1>
-        <div className="md:h-[0.3rem] h-1 bg-black w-20 md:w-40 text-white"></div>
+    <div className="mg flex lg:flex-row flex-col items-center justify-evenly md:p-[5rem] p-[2rem] gap-10">
+      {/* content */}
+      <div className="flex flex-col justify-center items-start">
+        <div className="py-[2rem]">
+          <h1 className=" font-bold text-4xl text-white">
+            About <span className="text-white">Us</span>
+          </h1>
+        </div>
+        <div className="py-[1rem] ">
+          <p className="text-white  text-[1rem] font-normal ">
+            As a leading flight booking and hotel reservation platform, we offer a comprehensive range of services
+            tailored to meet your travel needs. With just a few clicks, you can easily search, compare, and book flights
+            to destinations around the globe. Our user-friendly interface and advanced search options ensure that you
+            find the best fares and most convenient routes, saving you time and money.
+          </p>
+        </div>
+        <div className="py-[1rem] ">
+          <button className="py-[1rem] px-[2rem] bg-[#0a97b0] text-white">Read More</button>
+        </div>
       </div>
-      <div className="bg-white h-auto text-black md:mx-[6rem] mx-[2rem] drop-shadow-xl rounded-sm ">
-        <div className="flex flex-col items-center justify-center p-[5rem]">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-12">
-            {missionData.map((item, index) => (
-              <div key={index} className="flex flex-col items-center justify-center gap-3">
-                <div className="text-5xl text-center rounded-full">{<item.icon />}</div>
-                <div className="mt-5    text-2xl text-1xl font-serif text-black text-center">
-                  <h1>{item.category}</h1>
-                </div>
-                <div className="mt-2 text-medium  text-center font-light text-black ">{item.details}</div>
-              </div>
-            ))}
-          </div>
 
-          <div className="bg-yellow-500  border-solid mt-[4rem] md:mt-[6rem] px-4 py-2  ">
-            <button className="md:text-lg text-1xl font-semibold text-black">KNOW MORE</button>
-          </div>
+      {/* photo */}
+      <div className="border-2 lg:inline-block hidden">
+        <div>
+          <img
+            className="w-[100rem] h-[20rem] "
+            src="https://img.freepik.com/free-photo/medium-shot-woman-working-plane_23-2151205488.jpg?size=626&ext=jpg&uid=R135143294&ga=GA1.1.605707501.1697708835&semt=ais_ai_generated"
+            alt=""
+          />
         </div>
       </div>
     </div>
