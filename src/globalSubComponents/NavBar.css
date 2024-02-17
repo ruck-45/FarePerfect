@@ -1,16 +1,16 @@
 .active {
-  color: #F59E0B;
+  color: #0a97b0;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .notActive {
   color: black;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .notActive:hover {
-  color: #F59E0B;
+  color: #0a97b0;
 }
 
 .nav {

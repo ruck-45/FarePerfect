@@ -38,27 +38,51 @@ const content = [
     title: "Explore Malasia",
     des: "Experience the vibrant cityscape of malasia. From iconic skyscrapers...",
   },
+  {
+    place: "DUBAI",
+    pic: dubai,
+    title: "Explore Dubai",
+    des: "Experience the vibrant cityscape of Dubai. From iconic skyscrapers...",
+  },
+  {
+    place: "PARIS",
+    pic: paris,
+    title: "Explore Paris",
+    des: "Experience the vibrant cityscape of Paris. From iconic skyscrapers...",
+  },
+  {
+    place: "MALDIVES",
+    pic: maldives,
+    title: "Explore Maldives",
+    des: "Experience the vibrant cityscape of Maldives. From iconic skyscrapers...",
+  },
+  {
+    place: "BALI",
+    pic: bali,
+    title: "Explore Bali",
+    des: "Experience the vibrant cityscape of Bali. From iconic skyscrapers...",
+  },
+  {
+    place: "MALASIA",
+    pic: malasia,
+    title: "Explore Malasia",
+    des: "Experience the vibrant cityscape of malasia. From iconic skyscrapers...",
+  },
 ];
-
-function SampleNextArrow(props: any) {
-  const { className, style, onClick } = props;
-  return <div className={className} style={{ ...style, display: "block", background: "black" }} onClick={onClick} />;
-}
 
 const DestinationCard = () => {
   const settings: Settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    className: "max-w-[65rem] mx-auto",
+    className: "max-w-[80rem] mx-auto",
     focusOnSelect: true,
     centerMode: true,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SampleNextArrow />,
+    arrows: undefined,
     responsive: [
       {
         breakpoint: 1024,
@@ -87,20 +111,19 @@ const DestinationCard = () => {
           initialSlide: 2,
           className: "max-w-[22rem] mx-auto",
           swipeToSlide: true,
-          arrows: undefined,
         },
       },
     ],
   };
 
   return (
-    <div className="flex flex-col justify-center items-center bg-white ">
+    <div className="flex flex-col justify-center items-center bg-[#fffcf2] py-[3rem]">
       <div className="">
         <h1 className="text-5xl font-bold font-serif text-black text-center">
-          Popular <span className="text-yellow-600">Destination</span>
+          Popular <span className="text-[#0a97b0]">Destinations</span>
         </h1>
         <h2 className="text-center font-bold font-serif py-[1.5rem]">
-          Enjoy Your <span className="text-yellow-600">Destination</span>{" "}
+          Enjoy Your <span className="text-[#0a97b0]">Destination</span>{" "}
         </h2>
       </div>
       <div className="p-[3.5rem] gap-6 slider-container">

@@ -2,8 +2,8 @@ import ServiceImage from "./ServiceImage";
 
 const OurServices = () => {
   return (
-    <div className="bg-white flex flex-col items-center justify-center py-[3rem] gap-[2rem] pt-[5rem]">
-      <div className="flex flex-col items-center">
+    <div className="bg-white flex flex-col items-center justify-center gap-[2rem]">
+      <div className="flex flex-col items-center py-[3rem]">
         <h1 className="text-center text-4xl sm:text-5xl text-black font-bold font-serif">
           <span className="text-yellow-400">OUR</span> SERVICES
         </h1>
