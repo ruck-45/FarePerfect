@@ -54,46 +54,50 @@ const EmailForm = () => {
   };
 
   return (
-    <div className="bg-white px-[3rem] md:px-[8rem] py-[5rem]  flex flex-col items-center  gap-[2rem] lg:gap-[5rem]">
-      <div className="text-white flex flex-col gap-[1rem]">
-        <h1 className="text-[3rem] text-black ">Email Us</h1>
+    <div className="bg-white px-[3rem] lg:px-[8rem]   flex flex-col items-start py-[1rem]  gap-[1rem] ">
+      <div >
+        <h1 className="text-[2rem] text-black font-semibold ">CONTACT US</h1>
       </div>
-      <form className="flex flex-col gap-[1rem] items-center lg:w-[100%] grow" ref={form}>
-        <div className="flex gap-[1rem] w-full">
-          <Input
-            type="text"
-            label="Name"
-            variant="bordered"
-            color="warning"
-            name="name"
-            radius="none"
-            onChange={(event) => setUserNameState(event.currentTarget.value.length)}
-            errorMessage={userNameState === 0 ? "Please enter a valid Name" : ""}
-            isInvalid={userNameState === 0}
-          />
-          <Input
-            type="email"
-            label="Email"
-            name="email"
-            variant="bordered"
-            color="warning"
-            radius="none"
-            onChange={checkEmail}
-            isInvalid={emailValidity}
-            errorMessage={emailValidity ? "Please enter a valid Email" : ""}
-          />
-        </div>
-        <Input type="text" label="Subject" variant="bordered" color="warning" name="subject" radius="none" />
-        <Textarea label="Message" name="message" variant="bordered" color="warning" radius="none" />
+      <form className="flex flex-col gap-[1rem] items-start w-[100%] grow" ref={form}>
+        <Input
+          type="text"
+          classNames={{ input: "text-black" }}
+          label="Your Name"
+          variant="bordered"
+          name="subject"
+          radius="none"
+        />
+        <Input
+          type="number"
+          classNames={{ input: "text-black" }}
+          label="Phone Number"
+          variant="bordered"
+          name="subject"
+          radius="none"
+        />
+        <Input
+          type="text"
+          classNames={{ input: "text-black" }}
+          label="Subject"
+          variant="bordered"
+          name="subject"
+          radius="none"
+        />
+        <Textarea
+          label="Message"
+          name="message"
+          variant="bordered"
+          classNames={{ input: "text-black" }}
+          radius="none"
+        />
         <Button
-          color="warning"
           variant="shadow"
           radius="none"
-          className="w-[10rem] text-white"
+          className="w-[12rem] h-[3rem]  text-white bg-[#0a97b0]"
           endContent={<IoSend className="mt-[0.2rem]" />}
           //   onClick={sendEmail}
         >
-          Send Message
+          Send
         </Button>
         {/* <Toaster /> */}
       </form>
