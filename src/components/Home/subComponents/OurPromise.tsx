@@ -5,9 +5,9 @@ import { RiServiceFill } from "react-icons/ri";
 import { BiWorld } from "react-icons/bi";
 import { BiSupport } from "react-icons/bi";
 import { IoShieldCheckmarkSharp } from "react-icons/io5";
-import benifits from "../assets/benifitsOur.png";
+
 // Local Files
-import { Card, CardHeader, CardBody, Divider, Image } from "@nextui-org/react";
+import { Card, CardHeader, CardBody, Divider } from "@nextui-org/react";
 
 // Define your data as a JSON object
 const servicesData = [
@@ -55,24 +55,23 @@ const OurPromise = () => {
       <div
         className="hidden lg:flex  bg-no-repeat bg-center bg-cover w-[90rem] h-auto"
         style={{
-          backgroundImage: `url("https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
+          backgroundImage: `url("https://img.freepik.com/free-photo/beautiful-portrait-young-business-asian-woman-happy-smile-many-action_74190-10612.jpg?w=360&t=st=1708277779~exp=1708278379~hmac=56adf1e68c5afdc6a876ead5016881b754a5c77cb3f53f67bcce0b62093c73d0")`,
         }}
       ></div>
-      {/* <Image src="" alt="benifit image" className="h-auto w-[130rem]" radius="none" /> */}
-      <div className="flex flex-col gap-y-[5rem] items-center px-[2rem] py-[4rem]">
-        <h1 className="text-center text-4xl sm:text-5xl text-black font-bold ">
-          OUR <span className="text-[#0a97b0]">BENEFITS</span>
+      <div className="flex flex-col gap-y-[3rem] items-center px-[2rem] py-[4rem]">
+        <h1 className="text-center text-4xl sm:text-5xl text-black font-bold font-['Kanit']">
+          Our <span className="text-[#0a97b0]">Benefits</span>
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-[2rem] lg:gap-y-[4rem] gap-x-[1rem] justify-center items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-[2rem] lg:gap-y-[4rem] gap-x-[2rem] justify-center items-start p-[1rem]">
           {servicesData.map((service, index) => (
             <>
               <div className="hidden lg:flex flex-col gap-2">
                 <div className="flex flex-row gap-x-4">
                   <service.photo size={25} className="text-[#0a97b0]" />
-                  <h1 className="font-semibold text-xl lg:text-[1rem]">{service.title}</h1>
+                  <h1 className="font-semibold text-xl lg:text-[1.2rem] font-['Kanit']">{service.title}</h1>
                 </div>
                 <Divider className="bg-[#0a97b0]" />
-                <p>{service.description}</p>
+                <p className="text-[0.9rem]">{service.description}</p>
               </div>
               <Card className="lg:hidden h-[15rem] p-4 hover:scale-105">
                 <CardHeader className="flex gap-3">

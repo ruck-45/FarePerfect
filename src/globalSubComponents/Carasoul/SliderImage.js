@@ -1,21 +1,17 @@
-import First from "./assets/indoor-2594469_1280.jpg";
-import Second from "./assets/airport-2373727_1280.jpg";
-import Third from "./assets/si.jpg";
-
 export default [
   {
     title: "HURRY!",
-    description: "CHOOSE YOUR DESTINATION",
-    urls: Second,
+    description: '"Secure Your Dream Vacation"',
+    urls: "https://images.unsplash.com/photo-1569154941061-e231b4725ef1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "BE QUICK!",
-    description: "BOOK YOUR FLIGHT",
-    urls: First,
+    description: '"Book Your Flight Now !!"',
+    urls: "https://images.unsplash.com/photo-1581409518789-b43c70ad0e97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "ACT NOW!",
-    description: "GET THE TICKET",
-    urls: Third,
+    description: '"Avail Awesome Discounts !!"',
+    urls: "https://images.unsplash.com/photo-1415859295608-27921edab0ac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];

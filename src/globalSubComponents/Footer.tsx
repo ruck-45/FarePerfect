@@ -94,7 +94,7 @@ const Footer = () => {
   const navigate = useNavigate();
   return (
     <>
-      <footer className="flex flex-col items-center">
+      <footer className="flex flex-col items-center font-['Kanit']">
         <div className="text-white w-[80%] py-[2rem] flex flex-col gap-[1rem]">
           <h1 className="font-bold opacity-50 text-2xl">Disclaimer :</h1>
           <div className="">
@@ -233,7 +233,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div className="h-[5rem] bg-white text-black-400 text-small text-black md:text-large font-normal flex flex-col items-center justify-center px-[2rem] ">
+      <div className="h-[5rem] font-['Kanit'] text-white text-black-400 text-small md:text-large font-normal flex flex-col items-center justify-center px-[2rem] bg-[#0a97b0]">
         © 2024 FarePerfect • All Rights Reserved • Designed By TMIS with 🖤
       </div>
     </>

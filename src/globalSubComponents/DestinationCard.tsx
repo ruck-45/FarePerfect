@@ -118,14 +118,16 @@ const DestinationCard = () => {
   };
 
   return (
-    <div className="flex flex-col py-[3rem] md:py-[5rem] bg-white h-[40rem]">
-      <h1 className="text-5xl font-bold  text-black text-center">
-        Popular <span className="text-[#0a97b0]">Destinations</span>
-      </h1>
-      <h2 className="text-center font-bold  text-black py-[1.5rem]">
-        Enjoy Your <span className="text-[#0a97b0]">Destination</span>{" "}
-      </h2>
-      <div className="slider-container">
+    <div className="flex flex-col py-[3rem] md:py-[5rem] bg-white gap-[2rem]">
+      <div className="flex flex-col sm:gap-[0.5rem]">
+        <h1 className="text-4xl sm:text-5xl font-bold  text-black text-center font-['Kanit']">
+          Popular <span className="text-[#0a97b0]">Destinations</span>
+        </h1>
+        <h2 className="text-center font-bold  text-black">
+          Enjoy Your <span className="text-[#0a97b0]">Destination</span>{" "}
+        </h2>
+      </div>
+      <div className="slider-container max-h-[53vh]">
         <Slider {...settings}>
           {content.map((e, index) => (
             <div key={index} className="w-auto">
