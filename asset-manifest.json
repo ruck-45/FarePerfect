@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.616db9b3.css",
-    "main.js": "/static/js/main.133a987f.js",
+    "main.css": "/static/css/main.e276e59e.css",
+    "main.js": "/static/js/main.eb4a27e2.js",
     "static/media/medium-shot-smiley-people-traveling.jpg": "/static/media/medium-shot-smiley-people-traveling.8f5972505b2f888faee0.jpg",
     "static/media/malasia.jpg": "/static/media/malasia.7b64a75dd9b2eef9cd12.jpg",
     "static/media/maldives.jpg": "/static/media/maldives.4f2c7832c01728982b64.jpg",
@@ -21,11 +21,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "static/media/logo.svg": "/static/media/logo.59e010df4189e8066105e1b9db6fef7b.svg",
-    "main.616db9b3.css.map": "/static/css/main.616db9b3.css.map",
-    "main.133a987f.js.map": "/static/js/main.133a987f.js.map"
+    "main.e276e59e.css.map": "/static/css/main.e276e59e.css.map",
+    "main.eb4a27e2.js.map": "/static/js/main.eb4a27e2.js.map"
   },
   "entrypoints": [
-    "static/css/main.616db9b3.css",
-    "static/js/main.133a987f.js"
+    "static/css/main.e276e59e.css",
+    "static/js/main.eb4a27e2.js"
   ]
 }
