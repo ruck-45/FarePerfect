@@ -14,7 +14,6 @@ export const Disclaimer = () => {
     <>
       <Intro des="Disclaimer" />
       <div className="flex flex-col bg-white  md:px-[4rem] px-[0.7rem] items-center gap-3">
-        <div className="h-[15rem] md:h-[30rem] rounded-3xl flex flex-col mt-5 justify-between Disclaimer w-[90%]"></div>
         <div className="h-auto w-full p-4 text-start rounded-md flex flex-col gap-3 md:px-[5rem]">
           <p>
             The information, software, products, and services published on this website (Tripcanny) may contain

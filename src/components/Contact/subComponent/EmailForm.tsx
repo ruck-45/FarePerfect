@@ -55,8 +55,8 @@ const EmailForm = () => {
 
   return (
     <div className="bg-white px-[2rem] lg:px-[8rem]   flex flex-col items-start py-[1rem]  gap-[1rem] ">
-      <div >
-        <h1 className="text-[2rem] text-black font-semibold ">CONTACT US</h1>
+      <div>
+        <h1 className="text-[2rem] text-black font-semibold font-['Kanit']">CONTACT US</h1>
       </div>
       <form className="flex flex-col gap-[1rem] items-start w-[100%] grow" ref={form}>
         <Input

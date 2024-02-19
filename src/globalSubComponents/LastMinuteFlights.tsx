@@ -78,7 +78,6 @@ const LastMinuteFlights = () => {
     <>
       <Intro des={title.des} />
       <div className="flex flex-col bg-white  md:px-[4rem] px-[0.7rem] items-center gap-3">
-        <div className="h-[15rem] md:h-[30rem] rounded-3xl flex flex-col mt-5 justify-between lastMin w-[90%]"></div>
         <div className="h-auto w-full p-4 text-start rounded-md flex flex-col gap-3 md:px-[5rem]">
           <p>
             This Refund Policy outlines our guidelines and procedures regarding refunds for purchases made through our
@@ -103,7 +102,6 @@ const LastMinuteFlights = () => {
           </p>
         </div>
       </div>
-      <Subscribe />
     </>
   );
 };

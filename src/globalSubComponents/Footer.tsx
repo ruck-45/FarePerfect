@@ -94,21 +94,21 @@ const Footer = () => {
   const navigate = useNavigate();
   return (
     <>
-      <footer className="flex flex-col items-center font-['Kanit']">
-        <div className="text-white w-[80%] py-[2rem] flex flex-col gap-[1rem]">
-          <h1 className="font-bold opacity-50 text-2xl">Disclaimer :</h1>
-          <div className="">
-            Please note that fareperfect operates as an independent travel agency. Our extremely reduced offers are
-            non-refundable and come with restrictions on date and routing changes after ticketing and before travel.
-            Savings may vary without prior notice, and additional limitations may apply. By using our service, customers
-            explicitly agree that they do so at their sole risk. Fareperfect, its affiliates, and their respective
-            employees, agents, third-party content providers, or licensors do not warrant that our service will be
-            uninterrupted or error-free. Nor do they make any warranties regarding the results that may be obtained from
-            using our service or the accuracy, reliability, or content of any information, service, or inventory
-            provided through fareperfect.
-          </div>
+      <div className="text-white py-[2rem] px-[3rem] sm:px-[5rem] md:px-[8rem] flex flex-col gap-[1rem] bg-[#0a97b0]">
+        <h1 className="font-bold text-black text-[2rem] font-['Kanit']">Disclaimer :</h1>
+        <div className="text-[0.9rem] text-justify">
+          Please note that fareperfect operates as an independent travel agency. Our extremely reduced offers are
+          non-refundable and come with restrictions on date and routing changes after ticketing and before travel.
+          Savings may vary without prior notice, and additional limitations may apply. By using our service, customers
+          explicitly agree that they do so at their sole risk. Fareperfect, its affiliates, and their respective
+          employees, agents, third-party content providers, or licensors do not warrant that our service will be
+          uninterrupted or error-free. Nor do they make any warranties regarding the results that may be obtained from
+          using our service or the accuracy, reliability, or content of any information, service, or inventory provided
+          through fareperfect.
         </div>
-        <div className="w-[80%] border-t">
+      </div>
+      <footer className="flex flex-col items-center font-['Kanit']">
+        <div className="w-[80%]">
           <div className="text-white py-[2rem] flex flex-col gap-[1rem]">
             <h1 className="font-bold opacity-50 text-2xl">Top Airlines :</h1>
             <div className="grid grid-cols-2 md:grid-cols-4">

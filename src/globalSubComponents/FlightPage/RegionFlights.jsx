@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import Hero from "./Hero";
 import record from "./data/sestination.json";
 import { useLocation, useParams } from "react-router-dom";
