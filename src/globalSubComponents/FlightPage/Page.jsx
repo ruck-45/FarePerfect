@@ -22,7 +22,7 @@ const Page = () => {
 
     const contentType = location.state.type
     
-    const name = params.name
+    const name = params.name.replace(/-/g, " ");
     
     console.log(contentType,name)
 

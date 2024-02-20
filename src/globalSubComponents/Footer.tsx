@@ -27,6 +27,9 @@ const airlines = [
   "Caribbean Airlines",
   "Hainan Airlines",
   "WestJet Airlines",
+  "Southwest Airlines",
+  "Jetblue Airlines",
+  "Spirit Airlines",
 ];
 
 const destinations = [
@@ -115,7 +118,7 @@ const Footer = () => {
               {airlines.map((data, index) => (
                 <li
                   key={data}
-                  onClick={() => navigate(`/flight/${data}`, { state: { type: "airlines" } })}
+                  onClick={() => navigate(`/flight/${data.replace(/\s/g, "-")}`, { state: { type: "airlines" } })}
                   className="cursor-pointer hover:translate-x-0.5 transition"
                 >
                   {data}
@@ -230,6 +233,16 @@ const Footer = () => {
                 </svg>
               </Typography>
             </div>
+          </div>
+
+          <div className="text-white py-[2rem] flex flex-col md:flex-row md:gap-[1rem] border-t items-center justify-center">
+            <p>FarePerfect LLC</p>
+            <p>●</p>
+            <p>ARC Number : 05643573</p>
+            <p>●</p>
+            <p>16616 Woodruff Ave, Bellflower, CA 90706, USA</p>
+            <p>●</p>
+            <p>Phone : +1 (888) 891-7176</p>
           </div>
         </div>
       </footer>
