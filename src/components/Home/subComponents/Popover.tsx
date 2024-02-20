@@ -42,17 +42,17 @@ const Popover = () => {
               <p>Contact Us</p>
             </ModalHeader>
             <ModalBody className="flex flex-col justify-center items-center  py-[1rem]">
-              <Image width={100} src={logo} alt="logo" radius="none" />
-              <h1 className="text-[1.5rem] leading-[2.2rem] text-center font-bold">24/7 Reservation & Support</h1>
+              <Image width={70} src={logo} alt="logo" radius="none" />
+              <h1 className="text-[1.3rem] leading-[2.2rem] text-center font-bold">24/7 Reservation & Support</h1>
 
               <div
-                className="w-[10rem] h-[10rem] rounded-full bg-no-repeat bg-center bg-cover border-black border-[0.2rem]"
+                className="w-[6.5rem] h-[6.5rem] rounded-full bg-no-repeat bg-center bg-cover border-black border-[0.2rem]"
                 style={{
                   backgroundImage:
                     "url(https://img.freepik.com/free-photo/smiling-young-customer-service-girl-with-headset-her-workplace_231208-9605.jpg?w=996&t=st=1708341838~exp=1708342438~hmac=4e7dabc833ffad74b1b449865080904b09b53e6f86c61db151473f48a75d477f)",
                 }}
               ></div>
-              <h1 className="text-[1.2rem] leading-[2.2rem] text-center font-semibold">
+              <h1 className="text-[1rem] leading-[2.2rem] text-center font-semibold">
                 Call & Get Unpublished Flight Deals
               </h1>
 
@@ -69,8 +69,8 @@ const Popover = () => {
                 ))}
               </div>
 
-              <h1 className="text-[1.5rem] leading-[2.2rem] text-center font-bold">24/7 Helpline Available</h1>
-              <h1 className="text-[1.1rem] text-center leading-[1.2rem]">
+              <h1 className="text-[1.3rem] leading-[2.2rem] text-center font-bold">24/7 Helpline Available</h1>
+              <h1 className="text-[1rem] text-center leading-[1.2rem]">
                 Enter Your Number & We'll call you back within 5 seconds
               </h1>
             </ModalBody>
