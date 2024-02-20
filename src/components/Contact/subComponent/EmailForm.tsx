@@ -25,7 +25,8 @@ const EmailForm = () => {
   const [state, setState] = useState(false);
 
   const sendEmail = async () => {
-     setState(true)
+    setState(true);
+
     try {
       if (!emailValidity && userNameState > 0 && emailState > 0) {
         await emailjs.sendForm(
@@ -35,7 +36,7 @@ const EmailForm = () => {
           `${process.env.REACT_APP_PUBLIC_KEY}`
         );
         emailSent();
-        setState(false)
+        setState(false);
       } else {
         formNotFill();
         setState(false);
