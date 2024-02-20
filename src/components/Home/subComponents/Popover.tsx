@@ -32,17 +32,16 @@ const Popover = () => {
       <Button onPress={onOpen} className="hidden" ref={PopoverButton}>
         Open Modal
       </Button>
-      <Modal isOpen={isOpen} onOpenChange={onOpenChange} className="sm:hidden zscale" placement="center">
+      <Modal isOpen={isOpen} onOpenChange={onOpenChange} className="sm:hidden zscale" placement="center" size="full">
         <a href="tel:+1 (888) 891-7176">
-          <ModalContent className="h-auto">
+          <ModalContent className="min-h-[100vh]">
             <ModalHeader className="flex items-center gap-[0.4rem]">
               <Button isIconOnly variant="solid" radius="full" color="danger" className="text-[1rem]">
                 <FaPhone />
               </Button>
               <p>Contact Us</p>
             </ModalHeader>
-            <ModalBody className="flex flex-col justify-center items-center  py-[1rem]">
-              <Image width={70} src={logo} alt="logo" radius="none" />
+            <ModalBody className="flex flex-col justify-evenly items-center  py-[1rem]">
               <h1 className="text-[1.3rem] leading-[2.2rem] text-center font-bold">24/7 Reservation & Support</h1>
 
               <div
