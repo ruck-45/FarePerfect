@@ -24,7 +24,7 @@ const About = () => {
       <div className="flex flex-row lg:items-start lg:justify-start md:items-center md:justify-center py-[4rem] md:px-[8rem] px-[2rem] bg-white">
         <div className="flex flex-col items-start justify-center">
           <div className="py-[1.5rem]">
-            <h1 className="text-3xl font-semibold text-black ">About Us</h1>
+            <h1 className="text-3xl font-semibold text-black font-['Kanit']">About Us</h1>
           </div>
           <div className="py-[1rem] text-gray-600">
             <p className="py-[1rem] text-1xl">
@@ -46,7 +46,6 @@ const About = () => {
           <img src={phot} alt="" />
         </div>
       </div>
-      
     </div>
   );
 };

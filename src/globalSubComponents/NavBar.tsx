@@ -74,14 +74,14 @@ const NavBar = () => {
       <Navbar
         isMenuOpen={navOpenStatus}
         onMenuOpenChange={setIsMenuOpen}
-        className=" bg-white md:z-[200] h-[5rem] nav"
+        className=" bg-white md:z-[200] h-[6rem] font-['Kanit'] drop-shadow-md"
         maxWidth="xl"
         isBordered
       >
         <NavbarContent>
           <NavbarMenuToggle aria-label={navOpenStatus ? "Close menu" : "Open menu"} className="lg:hidden text-black" />
           <Link to="../Home">
-            <Image width={90} src={logo} alt="logo" radius="none" className="hidden lg:block" />
+            <Image width={100} src={logo} alt="logo" radius="none" className="hidden lg:block" />
           </Link>
         </NavbarContent>
         <NavbarContent className="lg:hidden logo mr-[30%]">
@@ -137,7 +137,7 @@ const NavBar = () => {
             </a>
           </NavbarItem>
         </NavbarContent>
-        <NavbarMenu className="bg-[white] mt-[4rem]">
+        <NavbarMenu className="bg-[white] mt-[2rem]">
           {menuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link

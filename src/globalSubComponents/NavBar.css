@@ -1,20 +1,16 @@
 .active {
   color: #0a97b0;
-  font-weight: 700;
-  font-size: 1rem;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 
 .notActive {
   color: black;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .notActive:hover {
   color: #0a97b0;
-}
-
-.nav {
-  font-family: "montserrat";
 }
 
 .navActiveServices::after {

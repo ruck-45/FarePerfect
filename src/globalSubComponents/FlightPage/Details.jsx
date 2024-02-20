@@ -1,24 +1,23 @@
-import React from "react";
 import lin from "./assets/lin.jpg";
 import bus from "./assets/business.jpg";
 
 const Details = ({ title, description, businessDes }) => {
   return (
     <>
-      <div className="flex flex-col justify-between items-center bg-white h-auto p-[3rem]">
+      <div className="flex flex-col justify-between items-center bg-white h-auto p-[3rem] ">
         <div className="flex lg:flex-row flex-col justify-center items-center h-auto ">
           <div className="p-[2rem] bg-center bg-cover lg:block hidden">
             <img className=" bg-center bg-cover" src={lin} alt="" />
           </div>
           <div>
-            <h2 className="lg:px-[3rem] p-[1rem]  font-bold text-[#0a97b0] text-3xl">{title}</h2>
+            <h2 className="lg:px-[3rem] p-[1rem]  font-bold text-[#0a97b0] text-3xl font-['Kanit']">{title}</h2>
             <p className="lg:px-[3rem] p-[1rem]  text-gray-600 font-normal">{description}</p>
           </div>
         </div>
 
         <div className="flex lg:flex-row flex-col justify-center items-center h-auto p-[3rem] border-2 ">
           <div>
-            <h2 className="md:px-[1rem] text-3xl font-bold  text-[#0a97b0]">Business Class</h2>
+            <h2 className="md:px-[1rem] text-3xl font-bold  text-[#0a97b0] font-['Kanit']">Business Class</h2>
             <p className="md:px-[1rem] h-auto text-start  font-normal text-gray-600 py-[1rem]">{businessDes}</p>
           </div>
           <div className="p-[2rem] bg-center bg-cover lg:block hidden">
@@ -28,7 +27,7 @@ const Details = ({ title, description, businessDes }) => {
       </div>
       <div className="flex flex-col  items-start justify-start gap-6 px-[4rem] bg-white h-auto w-auto ">
         <div className="flex flex-col items-start justify-center md:px-[2rem] ">
-          <h2 className="text-3xl  font-bold ">
+          <h2 className="text-3xl  font-bold font-['Kanit']">
             Why Book with <span className="text-[#0a97b0]">FarePerfect</span>
           </h2>
           <div>
@@ -43,7 +42,7 @@ const Details = ({ title, description, businessDes }) => {
         </div>
 
         <div className="flex flex-col items-start justify-center md:px-[2rem] ">
-          <h2 className="text-3xl  font-bold ">
+          <h2 className="text-3xl  font-bold font-['Kanit']">
             Airlines typically offer several <span className="text-[#0a97b0]">Classes</span>
           </h2>
           <div>
@@ -70,7 +69,7 @@ const Details = ({ title, description, businessDes }) => {
         </div>
 
         <div className="flex flex-col items-start justify-center md:px-[2rem] ">
-          <h2 className="text-3xl  font-bold ">
+          <h2 className="text-3xl  font-bold font-['Kanit']">
             {title} In-Flight Amenities <span className="text-[#0a97b0]">Amenities</span>
           </h2>
           <div>
@@ -109,7 +108,7 @@ const Details = ({ title, description, businessDes }) => {
         </div>
 
         <div className="flex flex-col items-start justify-center md:px-[2rem]">
-          <h2 className="text-3xl  font-bold  ">
+          <h2 className="text-3xl  font-bold  font-['Kanit']">
             Make Your Travel Easier With <span className="text-[#0a97b0]">FarePerfect</span>
           </h2>
           <div>

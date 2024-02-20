@@ -27,6 +27,9 @@ const airlines = [
   "Caribbean Airlines",
   "Hainan Airlines",
   "WestJet Airlines",
+  "Southwest Airlines",
+  "Jetblue Airlines",
+  "Spirit Airlines",
 ];
 
 const destinations = [
@@ -94,28 +97,28 @@ const Footer = () => {
   const navigate = useNavigate();
   return (
     <>
-      <footer className="flex flex-col items-center">
-        <div className="text-white w-[80%] py-[2rem] flex flex-col gap-[1rem]">
-          <h1 className="font-bold opacity-50 text-2xl">Disclaimer :</h1>
-          <div className="">
-            Please note that fareperfect operates as an independent travel agency. Our extremely reduced offers are
-            non-refundable and come with restrictions on date and routing changes after ticketing and before travel.
-            Savings may vary without prior notice, and additional limitations may apply. By using our service, customers
-            explicitly agree that they do so at their sole risk. Fareperfect, its affiliates, and their respective
-            employees, agents, third-party content providers, or licensors do not warrant that our service will be
-            uninterrupted or error-free. Nor do they make any warranties regarding the results that may be obtained from
-            using our service or the accuracy, reliability, or content of any information, service, or inventory
-            provided through fareperfect.
-          </div>
+      <div className="text-white py-[2rem] px-[3rem] sm:px-[5rem] md:px-[8rem] flex flex-col gap-[1rem] bg-[#0a97b0]">
+        <h1 className="font-bold text-black text-[2rem] font-['Kanit']">Disclaimer :</h1>
+        <div className="text-[0.9rem] text-justify">
+          Please note that fareperfect operates as an independent travel agency. Our extremely reduced offers are
+          non-refundable and come with restrictions on date and routing changes after ticketing and before travel.
+          Savings may vary without prior notice, and additional limitations may apply. By using our service, customers
+          explicitly agree that they do so at their sole risk. Fareperfect, its affiliates, and their respective
+          employees, agents, third-party content providers, or licensors do not warrant that our service will be
+          uninterrupted or error-free. Nor do they make any warranties regarding the results that may be obtained from
+          using our service or the accuracy, reliability, or content of any information, service, or inventory provided
+          through fareperfect.
         </div>
-        <div className="w-[80%] border-t">
+      </div>
+      <footer className="flex flex-col items-center font-['Kanit']">
+        <div className="w-[80%]">
           <div className="text-white py-[2rem] flex flex-col gap-[1rem]">
             <h1 className="font-bold opacity-50 text-2xl">Top Airlines :</h1>
             <div className="grid grid-cols-2 md:grid-cols-4">
               {airlines.map((data, index) => (
                 <li
                   key={data}
-                  onClick={() => navigate(`/flight/${data}`, { state: { type: "airlines" } })}
+                  onClick={() => navigate(`/flight/${data.replace(/\s/g, "-")}`, { state: { type: "airlines" } })}
                   className="cursor-pointer hover:translate-x-0.5 transition"
                 >
                   {data}
@@ -231,9 +234,19 @@ const Footer = () => {
               </Typography>
             </div>
           </div>
+
+          <div className="text-white py-[2rem] flex flex-col md:flex-row md:gap-[1rem] border-t items-center justify-center">
+            <p>FarePerfect LLC</p>
+            <p>●</p>
+            <p>ARC Number : 05643573</p>
+            <p>●</p>
+            <p>16616 Woodruff Ave, Bellflower, CA 90706, USA</p>
+            <p>●</p>
+            <p>Phone : +1 (888) 891-7176</p>
+          </div>
         </div>
       </footer>
-      <div className="h-[5rem] bg-white text-black-400 text-small text-black md:text-large font-normal flex flex-col items-center justify-center px-[2rem] ">
+      <div className="h-[5rem] font-['Kanit'] text-white text-black-400 text-small md:text-large font-normal flex flex-col items-center justify-center px-[2rem] bg-[#0a97b0]">
         © 2024 FarePerfect • All Rights Reserved • Designed By TMIS with 🖤
       </div>
     </>

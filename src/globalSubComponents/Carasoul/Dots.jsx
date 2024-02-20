@@ -1,4 +1,3 @@
-import React from "react";
 
 function Dots({ activeIndex, onclick, sliderImage }) {
   return (

@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
 import Hero from "./Hero";
 import record from "./data/sestination.json";
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { updateTab } from "../../store/curTabSlice";
+import Popover from "../../components/Home/subComponents/Popover";
 
 const RegionFlights = () => {
   const dispatch = useDispatch();
@@ -14,22 +14,15 @@ const RegionFlights = () => {
     behavior: "smooth",
   });
   let details = {};
-  const location = useLocation();
   const params = useParams();
 
-  const contentType = location.state.type;
   const name = params.place;
 
-  console.log(params);
-
-  if (contentType === "place") {
-    details = record.filter((filterData) => filterData.place === name);
-  }
-
-  console.log("hhhhhhh", details);
+  details = record.filter((filterData) => filterData.place === name);
 
   return (
     <>
+      <Popover />
       <Hero title={name} />
       {details &&
         details.map((e, i) => (
