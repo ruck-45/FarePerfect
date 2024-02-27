@@ -242,7 +242,7 @@ const Footer = () => {
             <p>●</p>
             <p>16616 Woodruff Ave, Bellflower, CA 90706, USA</p>
             <p>●</p>
-            <p>Phone : +1 (888) 891-7176</p>
+            <p>Phone : +1 (855) 574-6610</p>
           </div>
         </div>
       </footer>
