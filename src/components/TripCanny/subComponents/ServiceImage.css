@@ -1,0 +1,30 @@
+.img-after:after {
+  color: white;
+  position: absolute;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  font-family: "DM Serif Display";
+  font-size: 1.5rem;
+}
+
+.smm:hover:after {
+  content: "Hotel Booking";
+  font-size: 2rem;
+  color: yellow;
+}
+
+.seo:hover:after {
+  content: "Flight Booking";
+  font-size: 2rem;
+  color: yellow;
+}
+
+@media screen and (min-width: 480px) {
+  .seo:hover:after {
+    font-size: 4rem;
+  }
+
+  .smm:hover:after {
+    font-size: 4rem;
+  }
+}

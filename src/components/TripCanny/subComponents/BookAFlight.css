@@ -1,0 +1,13 @@
+.ProductSection {
+  height: 35rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1515859005217-8a1f08870f59?q=80&w=2010&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 750px) {
+  .ProductSection {
+    height: 60rem;
+  }
+}

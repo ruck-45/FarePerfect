@@ -15,6 +15,7 @@ import LastMinuteFlights from "./globalSubComponents/LastMinuteFlights";
 import Page from "./globalSubComponents/FlightPage/Page";
 import RegionFlights from "./globalSubComponents/FlightPage/RegionFlights";
 import { Disclaimer } from "./globalSubComponents/Disclaimer";
+import TripCanny from "./components/TripCanny/TripCanny";
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
 
   return (
     <>
-      {curTab === "Auth" ? null : <NavBar />}
+      {curTab === "Auth" || curTab === "TripCanny" ? null : <NavBar />}
       <Routes>
         <Route path="/" element={<Navigate to="/Home" />} />
         <Route path="/Home" element={<Home />} />
@@ -33,9 +34,10 @@ function App() {
         <Route path="/flight/:name" element={<Page />} />
         <Route path="/destination/:place" element={<RegionFlights />} />
         <Route path="/Disclaimer" element={<Disclaimer />} />
+        <Route path="/TripCanny" element={<TripCanny />} />
         <Route path="*" element={<Navigate to="/Home" />} />
       </Routes>
-      {curTab === "Auth" ? null : <Footer />}
+      {curTab === "Auth" || curTab === "TripCanny" ? null : <Footer />}
     </>
   );
 }
