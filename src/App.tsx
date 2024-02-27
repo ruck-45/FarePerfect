@@ -16,6 +16,7 @@ import Page from "./globalSubComponents/FlightPage/Page";
 import RegionFlights from "./globalSubComponents/FlightPage/RegionFlights";
 import { Disclaimer } from "./globalSubComponents/Disclaimer";
 import TripCanny from "./components/TripCanny/TripCanny";
+import Robinhood from "./components/Robinhood/Robinhood";
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
 
   return (
     <>
-      {curTab === "Auth" || curTab === "TripCanny" ? null : <NavBar />}
+      {curTab === "Auth" || curTab === "TripCanny" || curTab === "Robinhood" ? null : <NavBar />}
       <Routes>
         <Route path="/" element={<Navigate to="/Home" />} />
         <Route path="/Home" element={<Home />} />
@@ -35,9 +36,10 @@ function App() {
         <Route path="/destination/:place" element={<RegionFlights />} />
         <Route path="/Disclaimer" element={<Disclaimer />} />
         <Route path="/TripCanny" element={<TripCanny />} />
+        <Route path="/Robinhood" element={<Robinhood />} />
         <Route path="*" element={<Navigate to="/Home" />} />
       </Routes>
-      {curTab === "Auth" || curTab === "TripCanny" ? null : <Footer />}
+      {curTab === "Auth" || curTab === "TripCanny" || curTab === "Robinhood" ? null : <Footer />}
     </>
   );
 }
