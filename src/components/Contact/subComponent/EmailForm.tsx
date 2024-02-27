@@ -29,6 +29,7 @@ const EmailForm = () => {
 
     try {
       if (!emailValidity && userNameState > 0 && emailState > 0) {
+        console.log(form.current)
         await emailjs.sendForm(
           `${process.env.REACT_APP_SERVICE_ID}`,
           `${process.env.REACT_APP_TEMPLATE_ID}`,

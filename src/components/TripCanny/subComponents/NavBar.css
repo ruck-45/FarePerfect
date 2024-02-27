@@ -1,0 +1,32 @@
+.active {
+  color: #F59E0B;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.notActive {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.notActive:hover {
+  color: #F59E0B;
+}
+
+.nav {
+  font-family: "poppins";
+}
+
+.navActiveServices::after {
+  content: "";
+  height: 0.25rem;
+  border-radius: 1rem;
+  transform: translate(1.25rem, 1rem) !important;
+  background-color: white;
+  max-width: 6rem;
+  filter: drop-shadow(0 -0.3rem 0.4rem #d7cfd2);
+}
+
+.logo {
+  justify-content: center !important;
+}
