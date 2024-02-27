@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f2f54d27.css",
-    "main.js": "/static/js/main.67abc65e.js",
+    "main.css": "/static/css/main.7eb6f51c.css",
+    "main.js": "/static/js/main.460d0eac.js",
     "static/media/medium-shot-smiley-people-traveling.jpg": "/static/media/medium-shot-smiley-people-traveling.8f5972505b2f888faee0.jpg",
     "static/media/malasia.jpg": "/static/media/malasia.7b64a75dd9b2eef9cd12.jpg",
     "static/media/maldives.jpg": "/static/media/maldives.4f2c7832c01728982b64.jpg",
@@ -15,17 +15,17 @@
     "static/media/bookingBg.jpg": "/static/media/bookingBg.08ac4fbf43266dfb0bc2.jpg",
     "static/media/lastMinute.jpg": "/static/media/lastMinute.211564788bfc70a13d1e.jpg",
     "static/media/dubai.jpg": "/static/media/dubai.79b679e7b677979cefba.jpg",
+    "static/media/logo.svg": "/static/media/logo.59e010df4189e8066105e1b9db6fef7b.svg",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "static/media/logo.svg": "/static/media/logo.59e010df4189e8066105e1b9db6fef7b.svg",
-    "main.f2f54d27.css.map": "/static/css/main.f2f54d27.css.map",
-    "main.67abc65e.js.map": "/static/js/main.67abc65e.js.map"
+    "main.7eb6f51c.css.map": "/static/css/main.7eb6f51c.css.map",
+    "main.460d0eac.js.map": "/static/js/main.460d0eac.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2f54d27.css",
-    "static/js/main.67abc65e.js"
+    "static/css/main.7eb6f51c.css",
+    "static/js/main.460d0eac.js"
   ]
 }
