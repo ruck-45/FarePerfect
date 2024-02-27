@@ -27,7 +27,7 @@ const Protection = () => {
   return (
     <div className="px-[1rem] md:px-[2rem] lg:px-[3rem] py-[5rem] flex flex-col items-center bg-[#052814] gap-[3rem]">
       <p className="text-white font-semibold text-[4rem] max-w-[50rem] text-center leading-[4rem]">
-        InvestNow Protection Guarantee
+        Robinhood Protection Guarantee
       </p>
       <Button color="warning" radius="none">
         Learn more

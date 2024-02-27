@@ -12,7 +12,7 @@ const HeroSection = () => {
     <div className="robin-HeroSection flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center items-center gap-[1rem] w-[100%] px-[3rem] py-[2rem]">
         <GiProgression className="text-white text-[5rem] txtShadow" />
-        <p className="txtShadow text-[white] text-2xl font-semibold">InvestNow Retirement</p>
+        <p className="txtShadow text-[white] text-2xl font-semibold">Robinhood Retirement</p>
 
         <div className="flex flex-col items-center text-center text-[3rem] lg:text-[3.5rem] font-['Roboto'] font-bold leading-[3.4rem] lg:leading-[4rem] txtShadow">
           <span className="text-[white]">

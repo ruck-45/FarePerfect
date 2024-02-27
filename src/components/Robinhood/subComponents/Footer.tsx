@@ -14,12 +14,12 @@ import logo from "./logo.svg";
 const contactInfo = [
   {
     name: "Phone",
-    value: "+1 (844) 671-7475",
+    value: "+1 (855) 574-6610",
     icon: <FaPhone />,
   },
   {
     name: "Email",
-    value: "support@investnow.com",
+    value: "support@Robinhood.com",
     icon: <MdEmail />,
   },
   {
@@ -56,7 +56,7 @@ const Footer = () => {
     <div className="flex flex-col justify-center items-center py-[5rem] bg-[#052814] gap-[2rem] text-white robin-footer">
       <div className="flex gap-[4rem] robin-upperFooter">
         <div className="max-w-[20rem] flex flex-col gap-[2rem] robin-companySection">
-          <Image width={170} src={logo} alt="logo" radius="none" />
+          <Image width={170} src="" alt="logo" radius="none" />
           <p className="text-justify">
             Your go-to hub for versatile investment brokerage and trading services. Our platform features a spectrum of
             investment options complemented by expert guidance. Tailored solutions cater to both novice investors and
@@ -120,7 +120,7 @@ const Footer = () => {
         <Divider className="dark" />
       </div>
 
-      <p>© 2023 InvestNow • All Rights Reserved</p>
+      <p>© 2023 Robinhood • All Rights Reserved</p>
     </div>
   );
 };
